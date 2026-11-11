@@ -1,0 +1,51 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "One Click - Open GPS Dashboard",
+			"type": "shell",
+			"command": "Start-Process",
+			"args": [
+				"'${workspaceFolder}\\GPS Dashboard.html'"
+			],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"presentation": {
+				"reveal": "silent",
+				"panel": "shared"
+			},
+			"problemMatcher": []
+		},
+		{
+			"label": "Refresh GPS data - EDIUAT",
+			"type": "process",
+			"command": "pwsh",
+			"args": ["-NoProfile", "-File", "${workspaceFolder}/scripts/Refresh-GpsData.ps1", "-Source", "EDIUAT"],
+			"presentation": { "reveal": "always", "focus": true, "panel": "dedicated" },
+			"problemMatcher": []
+		},
+		{
+			"label": "Refresh GPS data - EDISYD",
+			"type": "process",
+			"command": "pwsh",
+			"args": ["-NoProfile", "-File", "${workspaceFolder}/scripts/Refresh-GpsData.ps1", "-Source", "EDISYD", "-Server", "${input:edisydServer}", "-Database", "${input:edisydDatabase}", "-UseCapability"],
+			"presentation": { "reveal": "always", "focus": true, "panel": "dedicated" },
+			"problemMatcher": []
+		},
+		{
+			"label": "Refresh GPS data - CSV import",
+			"type": "process",
+			"command": "pwsh",
+			"args": ["-NoProfile", "-File", "${workspaceFolder}/scripts/Refresh-GpsData.ps1", "-Source", "Csv", "-CsvFolder", "${input:csvFolder}"],
+			"presentation": { "reveal": "always", "focus": true, "panel": "dedicated" },
+			"problemMatcher": []
+		}
+	],
+	"inputs": [
+		{ "id": "edisydServer", "type": "promptString", "description": "EDISYD SQL server host" },
+		{ "id": "edisydDatabase", "type": "promptString", "description": "EDISYD database name" },
+		{ "id": "csvFolder", "type": "promptString", "description": "Folder containing effort.csv and groupIncidents.csv" }
+	]
+}

@@ -1,0 +1,2061 @@
+{
+  "results": [
+    {
+      "defectIntroducedCI": "T30000000",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01136422"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01136471"
+    },
+    {
+      "defectIntroducedCI": "T30000200",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01136493"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01136521"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01136538"
+    },
+    {
+      "defectIntroducedCI": "T30000500",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01136550"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000006",
+      "workItemId": "WI01136572"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01136574"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000008",
+      "workItemId": "WI01136579"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01136583"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01136606"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01136609"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01136626"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000014",
+      "workItemId": "WI01136634"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01136662"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01136778"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01136798"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000018",
+      "workItemId": "WI01136809"
+    },
+    {
+      "defectIntroducedCI": "T30001900",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01136901"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01136946"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01137005"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01137108"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01137116"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01137126"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01137142"
+    },
+    {
+      "defectIntroducedCI": "T30002600",
+      "defectIntroducedWI": "WI1000026",
+      "workItemId": "WI01137166"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01137179"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01137217"
+    },
+    {
+      "defectIntroducedCI": "T30002900",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01137223"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000030",
+      "workItemId": "WI01137232"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01137235"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000032",
+      "workItemId": "WI01137237"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01137250"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000034",
+      "workItemId": "WI01137264"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01137270"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01137278"
+    },
+    {
+      "defectIntroducedCI": "T30003900",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01137281"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01137286"
+    },
+    {
+      "defectIntroducedCI": "T30004100",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01137298"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01137321"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01137336"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01137400"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000045",
+      "workItemId": "WI01137437"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000046",
+      "workItemId": "WI01138552"
+    },
+    {
+      "defectIntroducedCI": "T30004700",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01138608"
+    },
+    {
+      "defectIntroducedCI": "T30004800",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01138613"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01138620"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01138632"
+    },
+    {
+      "defectIntroducedCI": "T30005100",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01138669"
+    },
+    {
+      "defectIntroducedCI": "T30005200",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01138757"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000053",
+      "workItemId": "WI01138810"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01138830"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000055",
+      "workItemId": "WI01138867"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01138869"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01138880"
+    },
+    {
+      "defectIntroducedCI": "T30005800",
+      "defectIntroducedWI": "WI1000058",
+      "workItemId": "WI01139040"
+    },
+    {
+      "defectIntroducedCI": "T30005900",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01139041"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000060",
+      "workItemId": "WI01139078"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01139090"
+    },
+    {
+      "defectIntroducedCI": "T30006200",
+      "defectIntroducedWI": "WI1000062",
+      "workItemId": "WI01139092"
+    },
+    {
+      "defectIntroducedCI": "T30006300",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01139099"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01139124"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01139129"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01139149"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000068",
+      "workItemId": "WI01139167"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01139239"
+    },
+    {
+      "defectIntroducedCI": "T30007000",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01139254"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01139417"
+    },
+    {
+      "defectIntroducedCI": "T30007200",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01139452"
+    },
+    {
+      "defectIntroducedCI": "T30007400",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01139548"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000075",
+      "workItemId": "WI01139564"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01139645"
+    },
+    {
+      "defectIntroducedCI": "T30007700",
+      "defectIntroducedWI": "WI1000077",
+      "workItemId": "WI01139657"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01139671"
+    },
+    {
+      "defectIntroducedCI": "T30007900",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01139679"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01139692"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01139722"
+    },
+    {
+      "defectIntroducedCI": "T30008300",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01139759"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000084",
+      "workItemId": "WI01139779"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000085",
+      "workItemId": "WI01139783"
+    },
+    {
+      "defectIntroducedCI": "T30008600",
+      "defectIntroducedWI": "WI1000086",
+      "workItemId": "WI01139794"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01139820"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000088",
+      "workItemId": "WI01139835"
+    },
+    {
+      "defectIntroducedCI": "T30008900",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01139858"
+    },
+    {
+      "defectIntroducedCI": "T30009000",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01139894"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01139957"
+    },
+    {
+      "defectIntroducedCI": "T30009200",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01139975"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01140058"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01140075"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000095",
+      "workItemId": "WI01140112"
+    },
+    {
+      "defectIntroducedCI": "T30009600",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141713"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000097",
+      "workItemId": "WI01141704"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000098",
+      "workItemId": "WI01141680"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000099",
+      "workItemId": "WI01141678"
+    },
+    {
+      "defectIntroducedCI": "T30010000",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141591"
+    },
+    {
+      "defectIntroducedCI": "T30010100",
+      "defectIntroducedWI": "WI1000101",
+      "workItemId": "WI01141590"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141506"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000104",
+      "workItemId": "WI01141502"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000105",
+      "workItemId": "WI01141497"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141466"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141461"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000108",
+      "workItemId": "WI01141460"
+    },
+    {
+      "defectIntroducedCI": "T30010900",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141456"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000110",
+      "workItemId": "WI01141432"
+    },
+    {
+      "defectIntroducedCI": "T30011100",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141414"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141395"
+    },
+    {
+      "defectIntroducedCI": "T30011300",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141362"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141289"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141286"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141264"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141236"
+    },
+    {
+      "defectIntroducedCI": "T30011800",
+      "defectIntroducedWI": "WI1000118",
+      "workItemId": "WI01141216"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141176"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000120",
+      "workItemId": "WI01141167"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141139"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141134"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141087"
+    },
+    {
+      "defectIntroducedCI": "T30012400",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141084"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141056"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141032"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141031"
+    },
+    {
+      "defectIntroducedCI": "T30012800",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141003"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141001"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01140971"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01140909"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01140887"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01140730"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01140679"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01140607"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000136",
+      "workItemId": "WI01140605"
+    },
+    {
+      "defectIntroducedCI": "T30013700",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01140598"
+    },
+    {
+      "defectIntroducedCI": "T30013800",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01140551"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01140523"
+    },
+    {
+      "defectIntroducedCI": "T30014000",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01140443"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000141",
+      "workItemId": "WI01140370"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01140262"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000143",
+      "workItemId": "WI01140189"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01140142"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01140118"
+    },
+    {
+      "defectIntroducedCI": "T30014600",
+      "defectIntroducedWI": "WI1000146",
+      "workItemId": "WI01141732"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141762"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141796"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000149",
+      "workItemId": "WI01141841"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141844"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141886"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000153",
+      "workItemId": "WI01141910"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141917"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141954"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01141980"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000157",
+      "workItemId": "WI01142026"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01142038"
+    },
+    {
+      "defectIntroducedCI": "T30015900",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01142083"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01142297"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01142381"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01142430"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01142482"
+    },
+    {
+      "defectIntroducedCI": "T30016500",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01142492"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01142537"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01142571"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01142578"
+    },
+    {
+      "defectIntroducedCI": "T30016900",
+      "defectIntroducedWI": "WI1000169",
+      "workItemId": "WI01142592"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01142596"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01142652"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01142706"
+    },
+    {
+      "defectIntroducedCI": "T30017400",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01142741"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01142746"
+    },
+    {
+      "defectIntroducedCI": "T30017700",
+      "defectIntroducedWI": "WI1000177",
+      "workItemId": "WI01143141"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01143180"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000179",
+      "workItemId": "WI01143210"
+    },
+    {
+      "defectIntroducedCI": "T30018000",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01143221"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01143235"
+    },
+    {
+      "defectIntroducedCI": "T30018200",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01143277"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000183",
+      "workItemId": "WI01143366"
+    },
+    {
+      "defectIntroducedCI": "T30018400",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01143370"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000185",
+      "workItemId": "WI01143424"
+    },
+    {
+      "defectIntroducedCI": "T30018600",
+      "defectIntroducedWI": "WI1000186",
+      "workItemId": "WI01143435"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01143461"
+    },
+    {
+      "defectIntroducedCI": "T30018800",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01143492"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01143555"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01143581"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01143706"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01143878"
+    },
+    {
+      "defectIntroducedCI": "T30019300",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01143889"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01143935"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01143997"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01144003"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01144011"
+    },
+    {
+      "defectIntroducedCI": "T30020000",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01144083"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000202",
+      "workItemId": "WI01144100"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01144123"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000204",
+      "workItemId": "WI01144138"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000206",
+      "workItemId": "WI01144163"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000207",
+      "workItemId": "WI01144166"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01144219"
+    },
+    {
+      "defectIntroducedCI": "T30020900",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01144294"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01144311"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01144345"
+    },
+    {
+      "defectIntroducedCI": "T30021200",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01144361"
+    },
+    {
+      "defectIntroducedCI": "T30021300",
+      "defectIntroducedWI": "WI1000213",
+      "workItemId": "WI01144391"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01144415"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01144420"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01144431"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01144458"
+    },
+    {
+      "defectIntroducedCI": "T30021800",
+      "defectIntroducedWI": "WI1000218",
+      "workItemId": "WI01144460"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01144474"
+    },
+    {
+      "defectIntroducedCI": "T30022100",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01144555"
+    },
+    {
+      "defectIntroducedCI": "T30022200",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01144559"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01144567"
+    },
+    {
+      "defectIntroducedCI": "T30022400",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01144568"
+    },
+    {
+      "defectIntroducedCI": "T30022500",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01144584"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01144588"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01144598"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01144646"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01144647"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01144683"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01144803"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01144808"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000233",
+      "workItemId": "WI01144950"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01144987"
+    },
+    {
+      "defectIntroducedCI": "T30023500",
+      "defectIntroducedWI": "WI1000235",
+      "workItemId": "WI01144990"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01145028"
+    },
+    {
+      "defectIntroducedCI": "T30023700",
+      "defectIntroducedWI": "WI1000237",
+      "workItemId": "WI01145037"
+    },
+    {
+      "defectIntroducedCI": "T30023900",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01145110"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01145131"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01145179"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000242",
+      "workItemId": "WI01145195"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01145203"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000244",
+      "workItemId": "WI01145235"
+    },
+    {
+      "defectIntroducedCI": "T30024500",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01145249"
+    },
+    {
+      "defectIntroducedCI": "T30024600",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01145265"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01145294"
+    },
+    {
+      "defectIntroducedCI": "T30024800",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01145313"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01145346"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000250",
+      "workItemId": "WI01145377"
+    },
+    {
+      "defectIntroducedCI": "T30025100",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01145407"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01145419"
+    },
+    {
+      "defectIntroducedCI": "T30025300",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01145456"
+    },
+    {
+      "defectIntroducedCI": "T30025400",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01145471"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000255",
+      "workItemId": "WI01145479"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01145637"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01145686"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000259",
+      "workItemId": "WI01145694"
+    },
+    {
+      "defectIntroducedCI": "T30026000",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01145700"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01145722"
+    },
+    {
+      "defectIntroducedCI": "T30026200",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01145753"
+    },
+    {
+      "defectIntroducedCI": "T30026300",
+      "defectIntroducedWI": "WI1000263",
+      "workItemId": "WI01145781"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01145786"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01145836"
+    },
+    {
+      "defectIntroducedCI": "T30026600",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01145839"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01145841"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01145849"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01145863"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01145919"
+    },
+    {
+      "defectIntroducedCI": "T30027300",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01146081"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01146187"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01146201"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01146346"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01146367"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01146494"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01146531"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01146577"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01146598"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01146663"
+    },
+    {
+      "defectIntroducedCI": "T30028400",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01146750"
+    },
+    {
+      "defectIntroducedCI": "T30028500",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01146907"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01146927"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01146940"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000288",
+      "workItemId": "WI01146992"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01147004"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01147010"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01147040"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01147059"
+    },
+    {
+      "defectIntroducedCI": "T30029300",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01147062"
+    },
+    {
+      "defectIntroducedCI": "T30029400",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01147064"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01147077"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01147078"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000297",
+      "workItemId": "WI01147119"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01147154"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01147239"
+    },
+    {
+      "defectIntroducedCI": "T30030000",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01147379"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01147397"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01147412"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01147419"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000304",
+      "workItemId": "WI01147438"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01147472"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01147475"
+    },
+    {
+      "defectIntroducedCI": "T30030800",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01147500"
+    },
+    {
+      "defectIntroducedCI": "T30030900",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01147501"
+    },
+    {
+      "defectIntroducedCI": "T30031000",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01147538"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000311",
+      "workItemId": "WI01147548"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01147568"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01147645"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000315",
+      "workItemId": "WI01147659"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01147662"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000317",
+      "workItemId": "WI01147726"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01147756"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01147806"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01147854"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01147886"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01148048"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000323",
+      "workItemId": "WI01148074"
+    },
+    {
+      "defectIntroducedCI": "T30032400",
+      "defectIntroducedWI": "WI1000324",
+      "workItemId": "WI01148081"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01148082"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01148143"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01148147"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01148154"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01148157"
+    },
+    {
+      "defectIntroducedCI": "T30033000",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01148158"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01148205"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01148206"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01148263"
+    },
+    {
+      "defectIntroducedCI": "T30033500",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01148267"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01148269"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01148275"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01148281"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000340",
+      "workItemId": "WI01148286"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01148291"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000342",
+      "workItemId": "WI01148295"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000343",
+      "workItemId": "WI01148301"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000344",
+      "workItemId": "WI01148315"
+    },
+    {
+      "defectIntroducedCI": "T30034500",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01148363"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01148434"
+    },
+    {
+      "defectIntroducedCI": "T30034700",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01148451"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01148541"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01148618"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01148642"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01148805"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01148846"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01148857"
+    },
+    {
+      "defectIntroducedCI": "T30035400",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01148872"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000355",
+      "workItemId": "WI01148904"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01148921"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01148932"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000359",
+      "workItemId": "WI01148980"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01148997"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01149018"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01149067"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000363",
+      "workItemId": "WI01149097"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01149107"
+    },
+    {
+      "defectIntroducedCI": "T30036500",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01149132"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01149136"
+    },
+    {
+      "defectIntroducedCI": "T30036700",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01149152"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000368",
+      "workItemId": "WI01149163"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01149183"
+    },
+    {
+      "defectIntroducedCI": "T30037000",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01149192"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01149237"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000372",
+      "workItemId": "WI01149257"
+    },
+    {
+      "defectIntroducedCI": "T30037300",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01149302"
+    },
+    {
+      "defectIntroducedCI": "T30037400",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01149333"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000375",
+      "workItemId": "WI01149408"
+    },
+    {
+      "defectIntroducedCI": "T30037600",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01149414"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01149483"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000378",
+      "workItemId": "WI01149524"
+    },
+    {
+      "defectIntroducedCI": "T30037900",
+      "defectIntroducedWI": "WI1000379",
+      "workItemId": "WI01149587"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000380",
+      "workItemId": "WI01149726"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01149810"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01149942"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01150034"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01150069"
+    },
+    {
+      "defectIntroducedCI": "T30038700",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01150126"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000388",
+      "workItemId": "WI01150127"
+    },
+    {
+      "defectIntroducedCI": "T30039100",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01150254"
+    },
+    {
+      "defectIntroducedCI": "T30039200",
+      "defectIntroducedWI": "WI1000392",
+      "workItemId": "WI01150288"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000393",
+      "workItemId": "WI01150323"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "workItemId": "WI01150671"
+    },
+    {
+      "defectIntroducedCI": "T30039500",
+      "defectIntroducedWI": "WI1000395",
+      "workItemId": "WI01150687"
+    },
+    {
+      "defectIntroducedCI": "T30039600",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01152163"
+    },
+    {
+      "defectIntroducedCI": "T30039700",
+      "defectIntroducedWI": null,
+      "workItemId": "WI01152234"
+    }
+  ],
+  "metadata": {
+    "executionDate": "2026-11-05",
+    "itemsWithDefectIntroducedCI": 107,
+    "itemsProcessed": 398,
+    "itemsWithDefectIntroducedWI": 92,
+    "tNumberExamples": [
+      {
+        "source": "DefectIntroducedInCheckin",
+        "tNumber": "T43227671",
+        "workItemId": "WI01136422"
+      },
+      {
+        "source": "DefectIntroducedInCheckin",
+        "tNumber": "T42156789",
+        "workItemId": "WI01136550"
+      },
+      {
+        "source": "defect_introduced_checkin",
+        "tNumber": "T41234567",
+        "workItemId": "WI01136798"
+      },
+      {
+        "source": "CheckinNumber",
+        "tNumber": "T40987654",
+        "workItemId": "WI01139452"
+      },
+      {
+        "source": "DefectIntroducedInCI",
+        "tNumber": "T39876543",
+        "workItemId": "WI01141678"
+      }
+    ],
+    "totalCount": 398,
+    "executionTime": "15:29:19"
+  },
+  "errors": [
+    {
+      "defectIntroducedCI": "T30001300",
+      "defectIntroducedWI": null,
+      "error": "API timeout",
+      "workItemId": "WI01136629"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000035",
+      "error": "API timeout",
+      "workItemId": "WI01137266"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "error": "API timeout",
+      "workItemId": "WI01137280"
+    },
+    {
+      "defectIntroducedCI": "T30006600",
+      "defectIntroducedWI": null,
+      "error": "API timeout",
+      "workItemId": "WI01139130"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "error": "API timeout",
+      "workItemId": "WI01139492"
+    },
+    {
+      "defectIntroducedCI": "T30008200",
+      "defectIntroducedWI": null,
+      "error": "API timeout",
+      "workItemId": "WI01139743"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "error": "API timeout",
+      "workItemId": "WI01141582"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000152",
+      "error": "API timeout",
+      "workItemId": "WI01141900"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "error": "API timeout",
+      "workItemId": "WI01142343"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "error": "API timeout",
+      "workItemId": "WI01142693"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "error": "API timeout",
+      "workItemId": "WI01143130"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "error": "API timeout",
+      "workItemId": "WI01144023"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "error": "API timeout",
+      "workItemId": "WI01144031"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "error": "API timeout",
+      "workItemId": "WI01144090"
+    },
+    {
+      "defectIntroducedCI": "T30020500",
+      "defectIntroducedWI": null,
+      "error": "API timeout",
+      "workItemId": "WI01144149"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000219",
+      "error": "API timeout",
+      "workItemId": "WI01144471"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "error": "API timeout",
+      "workItemId": "WI01145108"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "error": "API timeout",
+      "workItemId": "WI01145575"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "error": "API timeout",
+      "workItemId": "WI01145921"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "error": "API timeout",
+      "workItemId": "WI01145960"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "error": "API timeout",
+      "workItemId": "WI01146114"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000307",
+      "error": "API timeout",
+      "workItemId": "WI01147492"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "error": "API timeout",
+      "workItemId": "WI01147658"
+    },
+    {
+      "defectIntroducedCI": "T30033300",
+      "defectIntroducedWI": "WI1000333",
+      "error": "API timeout",
+      "workItemId": "WI01148234"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "error": "API timeout",
+      "workItemId": "WI01148276"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": "WI1000357",
+      "error": "API timeout",
+      "workItemId": "WI01148929"
+    },
+    {
+      "defectIntroducedCI": "T30038300",
+      "defectIntroducedWI": null,
+      "error": "API timeout",
+      "workItemId": "WI01149945"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "error": "API timeout",
+      "workItemId": "WI01150089"
+    },
+    {
+      "defectIntroducedCI": "T30038900",
+      "defectIntroducedWI": null,
+      "error": "API timeout",
+      "workItemId": "WI01150130"
+    },
+    {
+      "defectIntroducedCI": null,
+      "defectIntroducedWI": null,
+      "error": "API timeout",
+      "workItemId": "WI01150140"
+    }
+  ]
+}

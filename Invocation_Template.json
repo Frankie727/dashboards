@@ -1,0 +1,289 @@
+{
+  "invocationTemplate": {
+    "title": "EDI-Prod-get-job-details Invocation Template",
+    "description": "This template shows how to invoke the EDI-Prod-get-job-details tool for all 10 work items",
+    "date": "2026-11-05",
+    "workItemsCount": 10,
+    
+    "invocationSequence": [
+      {
+        "step": 1,
+        "workItem": "WI01152234",
+        "toolCall": {
+          "toolName": "EDI-Prod-get-job-details",
+          "parameters": {
+            "jobNumber": "WI01152234"
+          }
+        },
+        "expectedFields": ["priority", "defectIntroducedWI", "defectIntroducedCI", "relatedIncidents"],
+        "status": "PENDING"
+      },
+      {
+        "step": 2,
+        "workItem": "WI01152163",
+        "toolCall": {
+          "toolName": "EDI-Prod-get-job-details",
+          "parameters": {
+            "jobNumber": "WI01152163"
+          }
+        },
+        "expectedFields": ["priority", "defectIntroducedWI", "defectIntroducedCI", "relatedIncidents"],
+        "status": "PENDING"
+      },
+      {
+        "step": 3,
+        "workItem": "WI01152157",
+        "toolCall": {
+          "toolName": "EDI-Prod-get-job-details",
+          "parameters": {
+            "jobNumber": "WI01152157"
+          }
+        },
+        "expectedFields": ["priority", "defectIntroducedWI", "defectIntroducedCI", "relatedIncidents"],
+        "status": "PENDING"
+      },
+      {
+        "step": 4,
+        "workItem": "WI01152123",
+        "toolCall": {
+          "toolName": "EDI-Prod-get-job-details",
+          "parameters": {
+            "jobNumber": "WI01152123"
+          }
+        },
+        "expectedFields": ["priority", "defectIntroducedWI", "defectIntroducedCI", "relatedIncidents"],
+        "status": "PENDING"
+      },
+      {
+        "step": 5,
+        "workItem": "WI01152119",
+        "toolCall": {
+          "toolName": "EDI-Prod-get-job-details",
+          "parameters": {
+            "jobNumber": "WI01152119"
+          }
+        },
+        "expectedFields": ["priority", "defectIntroducedWI", "defectIntroducedCI", "relatedIncidents"],
+        "status": "PENDING"
+      },
+      {
+        "step": 6,
+        "workItem": "WI01152084",
+        "toolCall": {
+          "toolName": "EDI-Prod-get-job-details",
+          "parameters": {
+            "jobNumber": "WI01152084"
+          }
+        },
+        "expectedFields": ["priority", "defectIntroducedWI", "defectIntroducedCI", "relatedIncidents"],
+        "status": "PENDING"
+      },
+      {
+        "step": 7,
+        "workItem": "WI01152037",
+        "toolCall": {
+          "toolName": "EDI-Prod-get-job-details",
+          "parameters": {
+            "jobNumber": "WI01152037"
+          }
+        },
+        "expectedFields": ["priority", "defectIntroducedWI", "defectIntroducedCI", "relatedIncidents"],
+        "status": "PENDING"
+      },
+      {
+        "step": 8,
+        "workItem": "WI01151930",
+        "toolCall": {
+          "toolName": "EDI-Prod-get-job-details",
+          "parameters": {
+            "jobNumber": "WI01151930"
+          }
+        },
+        "expectedFields": ["priority", "defectIntroducedWI", "defectIntroducedCI", "relatedIncidents"],
+        "status": "PENDING"
+      },
+      {
+        "step": 9,
+        "workItem": "WI01151929",
+        "toolCall": {
+          "toolName": "EDI-Prod-get-job-details",
+          "parameters": {
+            "jobNumber": "WI01151929"
+          }
+        },
+        "expectedFields": ["priority", "defectIntroducedWI", "defectIntroducedCI", "relatedIncidents"],
+        "status": "PENDING"
+      },
+      {
+        "step": 10,
+        "workItem": "WI01151864",
+        "toolCall": {
+          "toolName": "EDI-Prod-get-job-details",
+          "parameters": {
+            "jobNumber": "WI01151864"
+          }
+        },
+        "expectedFields": ["priority", "defectIntroducedWI", "defectIntroducedCI", "relatedIncidents"],
+        "status": "PENDING"
+      }
+    ],
+
+    "collectionPhases": {
+      "phase1": {
+        "name": "Initial Data Collection",
+        "description": "Invoke EDI-Prod-get-job-details for all 10 work items",
+        "parallelizable": true,
+        "expectedDuration": "30-60 seconds per invocation",
+        "totalExpectedTime": "5-10 minutes if parallel, 5-10 minutes if sequential"
+      },
+      "phase2": {
+        "name": "Field Extraction",
+        "description": "Extract priority, defectIntroducedWI, defectIntroducedCI, relatedIncidents from responses",
+        "parallelizable": true,
+        "expectedDuration": "Minimal (local processing)"
+      },
+      "phase3": {
+        "name": "Data Validation",
+        "description": "Validate extracted fields against expected formats and types",
+        "parallelizable": false,
+        "expectedDuration": "Minimal"
+      },
+      "phase4": {
+        "name": "Fallback Resolution",
+        "description": "For any missing fields, invoke alternative tools",
+        "parallelizable": true,
+        "expectedDuration": "Variable based on missing fields"
+      },
+      "phase5": {
+        "name": "Results Compilation",
+        "description": "Compile all results into final JSON output",
+        "parallelizable": false,
+        "expectedDuration": "Minimal"
+      }
+    },
+
+    "expectedOutputStructure": {
+      "description": "The final output should follow this structure",
+      "structure": {
+        "executionSummary": {
+          "totalWorkItems": 10,
+          "targetFields": 4,
+          "successRate": "percentage",
+          "failureCount": "number",
+          "executionDate": "ISO date",
+          "executionTime": "duration"
+        },
+        "workItemResults": {
+          "WI01152234": {
+            "jobNumber": "WI01152234",
+            "fullResponse": { "COMPLETE_JSON_RESPONSE": "..." },
+            "extractedFields": {
+              "priority": "value",
+              "defectIntroducedWI": "value",
+              "defectIntroducedCI": "value",
+              "relatedIncidents": []
+            },
+            "structureNotes": {
+              "priorityPath": "path.to.priority",
+              "defectIntroducedWIPath": "path.to.defectIntroducedWI",
+              "defectIntroducedCIPath": "path.to.defectIntroducedCI",
+              "relatedIncidentsPath": "path.to.relatedIncidents"
+            },
+            "additionalInfo": {
+              "hasRelatedWorkitems": true,
+              "hasRelatedIssues": true,
+              "hasAttachments": true,
+              "hasConversationHistory": true
+            }
+          }
+        },
+        "fieldAvailabilitySummary": {
+          "priority": {
+            "found": true,
+            "locations": [],
+            "dataTypes": []
+          },
+          "defectIntroducedWI": {
+            "found": true,
+            "locations": [],
+            "dataTypes": []
+          },
+          "defectIntroducedCI": {
+            "found": true,
+            "locations": [],
+            "dataTypes": []
+          },
+          "relatedIncidents": {
+            "found": true,
+            "locations": [],
+            "dataTypes": []
+          }
+        },
+        "extractionGuide": {
+          "instructions": "Based on actual responses, provide extraction code",
+          "examples": "Show how to extract each field from the response JSON"
+        },
+        "conclusionAndRecommendations": {
+          "allFieldsAvailable": true,
+          "toolSufficiency": "Assessment of whether EDI-Prod-get-job-details is sufficient",
+          "necessaryAlternativeTools": [],
+          "nextSteps": []
+        }
+      }
+    },
+
+    "fallbackStrategy": {
+      "ifPriorityNotFound": {
+        "tool": "EDI-Prod-lookup-workitem-priorities",
+        "description": "Look up valid priority values and mapping"
+      },
+      "ifDefectIntroducedWINotFound": {
+        "tool": "EDI-Prod-get-job-details",
+        "strategy": "Check relatedWorkitems section for defect-introducing workitem"
+      },
+      "ifDefectIntroducedCINotFound": {
+        "tool": "EDI-Prod-get-job-workflows",
+        "description": "Get workflow details that may contain build/CI information"
+      },
+      "ifRelatedIncidentsNotFound": {
+        "tool": "EDI-Prod-filter-incidents",
+        "description": "Query incidents and filter for those related to this workitem"
+      }
+    },
+
+    "validationRules": {
+      "priority": {
+        "type": "string",
+        "allowedValues": ["Critical", "High", "Medium", "Low"],
+        "allowNull": true,
+        "validation": "Must match priority enum or be documented as null"
+      },
+      "defectIntroducedWI": {
+        "type": "string",
+        "pattern": "^WI\\d+$",
+        "allowNull": true,
+        "validation": "Must be valid WI format or null if not applicable"
+      },
+      "defectIntroducedCI": {
+        "type": "string",
+        "allowNull": true,
+        "validation": "Must be non-empty string or null if not available"
+      },
+      "relatedIncidents": {
+        "type": "array",
+        "itemPattern": "^CS\\d+$",
+        "allowEmpty": true,
+        "validation": "Array of CS-prefixed incident numbers or empty array"
+      }
+    },
+
+    "notes": [
+      "All 10 work item invocations should be made to complete the analysis",
+      "Responses should be stored in their complete JSON form for reference",
+      "Field extraction should note the exact path in the JSON structure",
+      "Any deviations from expected structure should be documented",
+      "Parallelize invocations if possible to reduce total execution time",
+      "Implement timeout handling for individual requests"
+    ]
+  }
+}

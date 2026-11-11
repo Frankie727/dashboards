@@ -1,0 +1,174 @@
+{
+  "metadata": {
+    "product": "GLW",
+    "description": "Complete GLW work item data collection",
+    "filters": {
+      "changeType": "FIX",
+      "status": "NCM",
+      "dateRange": "2026-10-06 to 2026-11-05"
+    },
+    "creation_time": "2026-11-05T03:52:16.461984Z",
+    "total_batch_calls": 7,
+    "total_detail_calls": "TBD (after batch collection)",
+    "total_estimated_calls": "~172"
+  },
+  "phase_1_batch_collection": {
+    "description": "Fetch all work item IDs using pagination",
+    "tool": "EDI-Prod-filter-workitems",
+    "calls": [
+      {
+        "batch_id": "batch_0",
+        "batch_number": 0,
+        "skip": 0,
+        "top": 50,
+        "tool": "EDI-Prod-filter-workitems",
+        "parameters": {
+          "product": "GLW",
+          "changeType": [
+            "FIX"
+          ],
+          "status": [
+            "NCM"
+          ],
+          "createdAfter": "2026-10-06",
+          "createdBefore": "2026-11-05",
+          "skip": 0,
+          "top": 50
+        }
+      },
+      {
+        "batch_id": "batch_1",
+        "batch_number": 1,
+        "skip": 50,
+        "top": 50,
+        "tool": "EDI-Prod-filter-workitems",
+        "parameters": {
+          "product": "GLW",
+          "changeType": [
+            "FIX"
+          ],
+          "status": [
+            "NCM"
+          ],
+          "createdAfter": "2026-10-06",
+          "createdBefore": "2026-11-05",
+          "skip": 50,
+          "top": 50
+        }
+      },
+      {
+        "batch_id": "batch_2",
+        "batch_number": 2,
+        "skip": 100,
+        "top": 50,
+        "tool": "EDI-Prod-filter-workitems",
+        "parameters": {
+          "product": "GLW",
+          "changeType": [
+            "FIX"
+          ],
+          "status": [
+            "NCM"
+          ],
+          "createdAfter": "2026-10-06",
+          "createdBefore": "2026-11-05",
+          "skip": 100,
+          "top": 50
+        }
+      },
+      {
+        "batch_id": "batch_3",
+        "batch_number": 3,
+        "skip": 150,
+        "top": 50,
+        "tool": "EDI-Prod-filter-workitems",
+        "parameters": {
+          "product": "GLW",
+          "changeType": [
+            "FIX"
+          ],
+          "status": [
+            "NCM"
+          ],
+          "createdAfter": "2026-10-06",
+          "createdBefore": "2026-11-05",
+          "skip": 150,
+          "top": 50
+        }
+      },
+      {
+        "batch_id": "batch_4",
+        "batch_number": 4,
+        "skip": 200,
+        "top": 50,
+        "tool": "EDI-Prod-filter-workitems",
+        "parameters": {
+          "product": "GLW",
+          "changeType": [
+            "FIX"
+          ],
+          "status": [
+            "NCM"
+          ],
+          "createdAfter": "2026-10-06",
+          "createdBefore": "2026-11-05",
+          "skip": 200,
+          "top": 50
+        }
+      },
+      {
+        "batch_id": "batch_5",
+        "batch_number": 5,
+        "skip": 250,
+        "top": 50,
+        "tool": "EDI-Prod-filter-workitems",
+        "parameters": {
+          "product": "GLW",
+          "changeType": [
+            "FIX"
+          ],
+          "status": [
+            "NCM"
+          ],
+          "createdAfter": "2026-10-06",
+          "createdBefore": "2026-11-05",
+          "skip": 250,
+          "top": 50
+        }
+      },
+      {
+        "batch_id": "batch_6",
+        "batch_number": 6,
+        "skip": 300,
+        "top": 50,
+        "tool": "EDI-Prod-filter-workitems",
+        "parameters": {
+          "product": "GLW",
+          "changeType": [
+            "FIX"
+          ],
+          "status": [
+            "NCM"
+          ],
+          "createdAfter": "2026-10-06",
+          "createdBefore": "2026-11-05",
+          "skip": 300,
+          "top": 50
+        }
+      }
+    ],
+    "expected_result": "CSV format with WI numbers, total count"
+  },
+  "phase_2_detail_collection": {
+    "description": "Fetch complete details for each work item",
+    "tool": "EDI-Prod-get-job-details",
+    "template": {
+      "tool": "EDI-Prod-get-job-details",
+      "parameter_template": {
+        "jobNumber": "WI00000000"
+      },
+      "expected_calls": "Will be ~165 calls based on batch results"
+    },
+    "note": "Will iterate over all work item IDs from phase 1"
+  }
+}

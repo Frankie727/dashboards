@@ -1,0 +1,121 @@
+{
+  "fileLocation": "C:\\Users\\Francesco.Mangione\\GitHub Repo - Francesco\\Dashboards",
+  "requiredFields": [
+    "workItemId",
+    "summary",
+    "status",
+    "changeType",
+    "product",
+    "area",
+    "module",
+    "createdTime"
+  ],
+  "statisticsByProduct": {
+    "ENT": {
+      "batchSkipValues": [
+        0,
+        50,
+        100,
+        150,
+        200,
+        250,
+        300,
+        350,
+        400,
+        450
+      ],
+      "batchesRequested": 10,
+      "totalFetched": 495,
+      "totalFiltered": 300,
+      "percentage": "87.2%"
+    },
+    "GLW": {
+      "batchSkipValues": [
+        0,
+        50
+      ],
+      "batchesRequested": 2,
+      "totalFetched": 61,
+      "totalFiltered": 44,
+      "percentage": "12.8%"
+    }
+  },
+  "filterCriteria": {
+    "products": [
+      "ENT",
+      "GLW"
+    ],
+    "createdBefore": "2026-11-05",
+    "createdAfter": "2026-10-06",
+    "statusIncluded": [
+      "WRK",
+      "ASN",
+      "OPN",
+      "other"
+    ],
+    "changeType": [
+      "FIX"
+    ],
+    "statusExcluded": [
+      "CLS",
+      "CAN",
+      ""
+    ]
+  },
+  "summaryByProduct": {
+    "ENT": "495 items fetched, 300 filtered (60.6% retention)",
+    "GLW": "61 items fetched, 44 filtered (72.1% retention)"
+  },
+  "collectionMetadata": {
+    "totalBatchesExecuted": 12,
+    "dataIntegrityCheck": "PASSED",
+    "failureCount": 0,
+    "apiCallsSuccessful": 12,
+    "executionDate": "2026-11-05T15:23:02.4550999+11:00"
+  },
+  "results": {
+    "totalItemsFiltered": 344,
+    "filteringMethod": "Exclude: CLS, CAN, empty; Include: WRK, ASN, OPN, other",
+    "retentionRate": "61.8%",
+    "totalItemsFetched": 556,
+    "totalItemsExcluded": 212
+  },
+  "note": "Approximately 221-344 filtered items as specified in NCM criteria",
+  "statisticsByStatus": {
+    "CAN": {
+      "count": 12,
+      "retained": false,
+      "percentage": 2.2
+    },
+    "WRK": {
+      "count": 296,
+      "retained": true,
+      "percentage": 53.2
+    },
+    "Empty": {
+      "count": 5,
+      "retained": false,
+      "percentage": 0.9
+    },
+    "OPN": {
+      "count": 10,
+      "retained": true,
+      "percentage": 1.8
+    },
+    "CLS": {
+      "count": 195,
+      "retained": false,
+      "percentage": 35.1
+    },
+    "ASN": {
+      "count": 28,
+      "retained": true,
+      "percentage": 5.0
+    },
+    "Other": {
+      "count": 10,
+      "retained": true,
+      "percentage": 1.8
+    }
+  }
+}

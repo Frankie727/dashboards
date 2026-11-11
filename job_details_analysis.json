@@ -1,0 +1,104 @@
+{
+  "taskDescription": "EDI-Prod-get-job-details Tool Analysis - 10 Work Items",
+  "executionDate": "2026-11-05T13:41:02.490+11:00",
+  "toolInformation": {
+    "toolName": "EDI-Prod-get-job-details",
+    "serverProvider": "EDI Prod MCP server",
+    "parameterSchema": {
+      "jobNumber": {
+        "type": "string",
+        "description": "A unique number of workitem (starts with WI), incident (starts with CS), or project (starts with PRJ)",
+        "pattern": "^((WI|CS)\\\\d{5,}|PRJ\\\\d+)$",
+        "minLength": 1,
+        "examples": ["WI01152234", "WI00878427", "CS00034343", "PRJ00049378"]
+      }
+    },
+    "responseProvidesFields": [
+      "Basic attributes (title, status, product info, etc.)",
+      "Direct ediProd URL in the metadata block",
+      "Description and notes",
+      "List of related workitems, incidents, and projects",
+      "Related issues (issueId, issueNumber, issueMessage)",
+      "Conversation history with clients (for incidents)",
+      "Attached documents",
+      "License info for incidents (server code, licence type, host server name, host database name, version)"
+    ]
+  },
+  "workItemsToRetrieve": [
+    "WI01152234",
+    "WI01152163",
+    "WI01152157",
+    "WI01152123",
+    "WI01152119",
+    "WI01152084",
+    "WI01152037",
+    "WI01151930",
+    "WI01151929",
+    "WI01151864"
+  ],
+  "targetFieldsToAnalyze": [
+    {
+      "fieldName": "priority",
+      "description": "Work item priority level",
+      "expectedType": "string or enum"
+    },
+    {
+      "fieldName": "defectIntroducedWI",
+      "description": "Defect introduced by workitem ID",
+      "expectedType": "string"
+    },
+    {
+      "fieldName": "defectIntroducedCI",
+      "description": "Defect introduced by CI/build identifier",
+      "expectedType": "string"
+    },
+    {
+      "fieldName": "relatedIncidents",
+      "description": "List of related incident numbers",
+      "expectedType": "array of strings or objects"
+    }
+  ],
+  "analysisObjectives": [
+    "Determine which of the 4 target fields appear in the EDI-Prod-get-job-details responses",
+    "Document the exact path/location of each field in the JSON structure",
+    "Identify alternative tools if fields are not available via this tool",
+    "Create extraction guidance for consuming applications",
+    "Verify tool completeness for the stated requirements"
+  ],
+  "allResponses": {
+    "WI01152234": "PENDING - Awaiting EDI-Prod-get-job-details invocation",
+    "WI01152163": "PENDING - Awaiting EDI-Prod-get-job-details invocation",
+    "WI01152157": "PENDING - Awaiting EDI-Prod-get-job-details invocation",
+    "WI01152123": "PENDING - Awaiting EDI-Prod-get-job-details invocation",
+    "WI01152119": "PENDING - Awaiting EDI-Prod-get-job-details invocation",
+    "WI01152084": "PENDING - Awaiting EDI-Prod-get-job-details invocation",
+    "WI01152037": "PENDING - Awaiting EDI-Prod-get-job-details invocation",
+    "WI01151930": "PENDING - Awaiting EDI-Prod-get-job-details invocation",
+    "WI01151929": "PENDING - Awaiting EDI-Prod-get-job-details invocation",
+    "WI01151864": "PENDING - Awaiting EDI-Prod-get-job-details invocation"
+  },
+  "fieldAvailabilitySummary": {
+    "priority": {
+      "found": null,
+      "locations": [],
+      "exampleValues": []
+    },
+    "defectIntroducedWI": {
+      "found": null,
+      "locations": [],
+      "exampleValues": []
+    },
+    "defectIntroducedCI": {
+      "found": null,
+      "locations": [],
+      "exampleValues": []
+    },
+    "relatedIncidents": {
+      "found": null,
+      "locations": [],
+      "exampleValues": []
+    }
+  },
+  "executionStatus": "INITIALIZED - Ready to invoke EDI-Prod-get-job-details for each work item",
+  "notes": "Tool invocation requires use of the EDI Prod MCP server. Each work item ID must be passed individually to the tool's jobNumber parameter. Response structure includes related workitems, incidents, projects, and issues sections."
+}

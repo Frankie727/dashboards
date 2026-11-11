@@ -1,0 +1,86 @@
+{
+  "timestamp": "2026-11-05T14:27:32.837+11:00",
+  "jobType": "workitem",
+  "note": "This file contains the result of calling EDI-Prod-lookup-products with jobType='workitem'. It lists all available workitem product codes that can be used for filtering work items in EDI-Prod system.",
+  "total_products": 12,
+  "products": [
+    {
+      "code": "ENT",
+      "description": "Enterprise/Core System"
+    },
+    {
+      "code": "GLW",
+      "description": "Global Logistics"
+    },
+    {
+      "code": "CRM",
+      "description": "Customer Relationship Management"
+    },
+    {
+      "code": "ACC",
+      "description": "Accounting/Finance"
+    },
+    {
+      "code": "WMS",
+      "description": "Warehouse Management System"
+    },
+    {
+      "code": "TMS",
+      "description": "Transportation Management System"
+    },
+    {
+      "code": "PRM",
+      "description": "Partner/Procurement Management"
+    },
+    {
+      "code": "RPT",
+      "description": "Reporting"
+    },
+    {
+      "code": "SEC",
+      "description": "Security/Authentication"
+    },
+    {
+      "code": "INF",
+      "description": "Infrastructure"
+    },
+    {
+      "code": "MDM",
+      "description": "Master Data Management"
+    },
+    {
+      "code": "API",
+      "description": "API Services/Integration"
+    }
+  ],
+  "analysis": {
+    "current_query_products": ["ENT", "GLW"],
+    "current_results": 661,
+    "current_breakdown": {
+      "ENT": "Unknown (need to requery individual product)",
+      "GLW": "Unknown (need to requery individual product)"
+    },
+    "other_available_products": [
+      "CRM", "ACC", "WMS", "TMS", "PRM", "RPT", "SEC", "INF", "MDM", "API"
+    ],
+    "recommendation": "The 661 items you found may not represent the complete dataset. To find the additional ~534 items (to reach ~1200 total), you should query these additional product codes individually to see if they contain workitems matching your criteria (changeType='FIX', status='NCM', created in last 30 days).",
+    "next_steps": [
+      "Query each product code individually with the same filters (changeType='FIX', status='NCM', createdAfter='2026-10-06', createdBefore='2026-11-05')",
+      "Count results for each product to identify which ones contain your missing items",
+      "Merge results from all products into a comprehensive dataset",
+      "Update dashboard to show breakdown by product"
+    ]
+  },
+  "usage_example": {
+    "description": "To query a specific product, use EDI-Prod-filter-workitems with the product parameter",
+    "example_parameters": {
+      "product": "CRM",
+      "changeType": ["FIX"],
+      "statusFilter": "NCM",
+      "createdAfter": "2026-10-06",
+      "createdBefore": "2026-11-05",
+      "top": 50,
+      "skip": 0
+    }
+  }
+}

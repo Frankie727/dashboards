@@ -1,0 +1,16 @@
+{
+  "ent": {
+    "beforeFilter": 0,
+    "afterFilter": 0,
+    "items": []
+  },
+  "glw": {
+    "beforeFilter": 0,
+    "afterFilter": 0,
+    "items": []
+  },
+  "totals": {
+    "beforeFilter": 0,
+    "afterFilter": 0
+  }
+}

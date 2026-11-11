@@ -1,0 +1,15 @@
+{
+  "meta": {
+    "timestamp": "2026-11-05T13:06:28.778+11:00",
+    "queryParams": {
+      "products": ["ENT", "GLW"],
+      "changeType": "FIX",
+      "statusFilter": "NCM (NOT CLS, NOT CAN, NOT empty)",
+      "createdLastDays": 30
+    },
+    "totalCount": 0,
+    "itemsWithDefectIntroduced": 0,
+    "itemsWithoutDefectIntroduced": 0
+  },
+  "data": []
+}

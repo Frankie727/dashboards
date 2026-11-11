@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "timestamp": "2026-11-05T15:45:41.515+11:00",
+    "totalCount": 300,
+    "itemsWithDefectIntroduced": 0,
+    "itemsWithoutDefectIntroduced": 0,
+    "queryParams": {
+      "changeType": "FIX",
+      "products": [
+        "ENT",
+        "GLW"
+      ],
+      "statusFilter": "NOT CLS AND NOT CAN AND NOT empty",
+      "createdDateRange": "2026-10-06 to 2026-11-05"
+    }
+  },
+  "data": []
+}

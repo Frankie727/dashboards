@@ -1,0 +1,78 @@
+{
+  "ent_batches": [
+    {
+      "skip": 0,
+      "total": 495,
+      "count": 50,
+      "data": "# Found 50 of 495 workitems (Index: 1-50)\n**Note:** More results are available. Use skip: 50 to fetch the next page.\n\nNumber,Summary,Product,Area,Module,ChangeType,Status,Created,Updated,Completed,Created By,Release Groups,Last Activity\nWI01152234,Test Portal uri pointing to invalid address,ENT,REF,N/A,FIX,WRK,2026-11-05,2026-11-05,N/A,JGO,RFDRG,2026-11-05T03:54:00.000Z\nWI01152163,UMCP - UCP - IL packer re-queues messages it can never pack instead of discardin,ENT,CUS,BIL,FIX,WRK,2026-11-04,2026-11-04,N/A,DCA,CUSILRG,2026-11-04T04:34:00.000Z"
+    },
+    {
+      "skip": 50,
+      "total": 495,
+      "count": 50,
+      "data": "# Found 50 of 495 workitems (Index: 51-100)\n**Note:** More results are available. Use skip: 100 to fetch the next page.\n\nNumber,Summary,Product,Area,Module,ChangeType,Status,Created,Updated,Completed,Created By,Release Groups,Last Activity\nWI01150671,TB Shows Reference location at Origin when done at Destination,ENT,DTP,TBK,FIX,WRK,2026-11-02,2026-11-03,N/A,BTR,TRANSPORTRG,2026-11-03T03:08:00.000Z\nWI01150323, Trade Scenario Wizard - Performance Issues,ENT,CWC,GTW,FIX,WRK,2026-11-02,2026-11-04,N/A,SNP,CWCOMRG,2026-11-04T03:50:00.000Z"
+    },
+    {
+      "skip": 100,
+      "total": 495,
+      "count": 50,
+      "data": "# Found 50 of 495 workitems (Index: 101-150)\n**Note:** More results are available. Use skip: 150 to fetch the next page.\n\nNumber,Summary,Product,Area,Module,ChangeType,Status,Created,Updated,Completed,Created By,Release Groups,Last Activity\nWI01148315,Delivery Service logs are not fully captured in Kibana,ENT,REF,N/A,FIX,WRK,2026-10-29,2026-11-05,N/A,MKI,RFDRG,2026-11-05T03:20:00.000Z\nWI01148301,TB documents: review parent-only party getters on FreightWrapperFromDtbBooking,ENT,DTP,DEL,FIX,WRK,2026-10-29,2026-11-04,N/A,EDL,DELTARG,2026-11-04T04:04:00.000Z"
+    },
+    {
+      "skip": 150,
+      "total": 495,
+      "count": 50,
+      "data": "# Found 50 of 495 workitems (Index: 151-200)\n**Note:** More results are available. Use skip: 200 to fetch the next page.\n\nNumber,Summary,Product,Area,Module,ChangeType,Status,Created,Updated,Completed,Created By,Release Groups,Last Activity\nWI01147064,The database principal has granted or denied permissions to objects in the datab,ENT,PER,APP,FIX,WRK,2026-10-27,2026-10-29,N/A,~BP,ARCCORRG,2026-10-29T00:11:00.000Z\nWI01147062,TR - NCTS Phase 5 - Empty T15 list is treated as a rejection,ENT,CUS,BTR,FIX,CLS,2026-10-27,2026-11-04,2026-11-04,LPK,CUSTRRG,2026-11-04T07:52:00.000Z"
+    },
+    {
+      "skip": 200,
+      "total": 495,
+      "count": 50,
+      "data": "# Found 50 of 495 workitems (Index: 201-250)\n**Note:** More results are available. Use skip: 250 to fetch the next page.\n\nNumber,Summary,Product,Area,Module,ChangeType,Status,Created,Updated,Completed,Created By,Release Groups,Last Activity\nWI01145235,Upgrade Failure Lock request time out period exceeded.,ENT,PER,APP,FIX,WRK,2026-10-23,2026-10-26,N/A,~BP,ARCCORRG,2026-10-26T02:35:00.000Z\nWI01145203,Bulk cancel of One off Quote lacks QOC event,ENT,RAT,SOQ,FIX,WRK,2026-10-23,2026-11-05,N/A,AZR,RATINGRG,2026-11-05T01:22:00.000Z"
+    },
+    {
+      "skip": 250,
+      "total": 495,
+      "count": 50,
+      "data": "# Found 50 of 495 workitems (Index: 251-300)\n**Note:** More results are available. Use skip: 300 to fetch the next page.\n\nNumber,Summary,Product,Area,Module,ChangeType,Status,Created,Updated,Completed,Created By,Release Groups,Last Activity\nWI01143935,The received certificate has expired.,ENT,PER,DBO,FIX,WRK,2026-10-21,2026-10-21,N/A,~BP,ARCCORRG,2026-10-21T07:08:00.000Z\nWI01143889,skill-usage-metrics: keep manifest version equal to telemetry version,ENT,CUS,CAI,FIX,CLS,2026-10-20,2026-10-21,2026-10-21,JP0,CUSAIRG,2026-10-21T07:59:00.000Z"
+    },
+    {
+      "skip": 300,
+      "total": 495,
+      "count": 50,
+      "data": "# Found 50 of 495 workitems (Index: 301-350)\n**Note:** More results are available. Use skip: 350 to fetch the next page.\n\nNumber,Summary,Product,Area,Module,ChangeType,Status,Created,Updated,Completed,Created By,Release Groups,Last Activity\nWI01141704,MX Customs - Staff & Resources - Fix to Credentials tab,ENT,CUS,BMX,FIX,CLS,2026-10-15,2026-10-27,2026-10-27,RR7,CUSLAT2RG,2026-10-27T16:31:00.000Z\nWI01141680,No hosted service attribute found for service task code 'CC'.,ENT,PRC,PRC,FIX,CAN,2026-10-15,2026-10-15,2026-10-15,~BP,ARCPRCRG,2026-10-15T14:51:00.000Z"
+    },
+    {
+      "skip": 350,
+      "total": 495,
+      "count": 50,
+      "data": "# Found 50 of 495 workitems (Index: 351-400)\n**Note:** More results are available. Use skip: 400 to fetch the next page.\n\nNumber,Summary,Product,Area,Module,ChangeType,Status,Created,Updated,Completed,Created By,Release Groups,Last Activity\nWI01140075,EU - List of applicable UOM,ENT,CUS,BFR,FIX,WRK,2026-10-13,2026-11-05,N/A,TS9,CUSATLRG,2026-11-05T02:15:00.000Z\nWI01140058,CIV: Interpreting comma vs decimals,ENT,DIN,N/A,FIX,WRK,2026-10-13,2026-11-04,N/A,BR7,SPMAXPDRG,2026-11-04T11:01:00.000Z"
+    },
+    {
+      "skip": 400,
+      "total": 495,
+      "count": 50,
+      "data": "# Found 50 of 495 workitems (Index: 401-450)\n**Note:** More results are available. Use skip: 450 to fetch the next page.\n\nNumber,Summary,Product,Area,Module,ChangeType,Status,Created,Updated,Completed,Created By,Release Groups,Last Activity\nWI01138494,[AppSec] Mac/iPad: confine the WebView native bridge to the CargoWise server,ENT,WZR,FWK,FIX,CLS,2026-10-09,2026-10-26,2026-10-26,AG8,WINZORRG,2026-10-26T23:58:00.000Z\nWI01138479,CRA: Correct batch failure recovery and safely retry transient database errors,ENT,MDC,EMG,FIX,CLS,2026-10-09,2026-10-22,2026-10-22,RT8,MDMCOMRG,2026-10-22T03:49:00.000Z"
+    },
+    {
+      "skip": 450,
+      "total": 495,
+      "count": 45,
+      "data": "# Found 45 of 495 workitems (Index: 451-495)\n\nNumber,Summary,Product,Area,Module,ChangeType,Status,Created,Updated,Completed,Created By,Release Groups,Last Activity\nWI01137400,FR VAT - convert type=NAT and status=6 to type=B00 when saving confirmed fee,ENT,CUS,BFR,FIX,CLS,2026-10-07,2026-10-19,2026-10-19,DJC,CUSATLRG,2026-10-19T16:20:00.000Z\nWI01137336,Homescreen shows untranslated strings,ENT,WZR,FWK,FIX,CLS,2026-10-07,2026-10-19,2026-10-19,HGN,WINZORRG,2026-10-19T23:13:00.000Z"
+    }
+  ],
+  "glw_batches": [
+    {
+      "skip": 0,
+      "total": 61,
+      "count": 50,
+      "data": "# Found 50 of 61 workitems (Index: 1-50)\n**Note:** More results are available. Use skip: 50 to fetch the next page.\n\nNumber,Summary,Product,Area,Module,ChangeType,Status,Created,Updated,Completed,Created By,Release Groups,Last Activity\nWI01152179,DTS Carrier Booking – Unable to book carrier after updating any detail,GLW,DTS,N/A,FIX,WRK,2026-11-05,2026-11-05,N/A,EJD,DOMTRARG,2026-11-05T02:44:00.000Z\nWI01152133,TW WWF - pin node / npm version in CI,GLW,DTW,N/A,FIX,WRK,2026-11-04,2026-11-05,N/A,NM2,TWHRG,2026-11-05T02:12:00.000Z"
+    },
+    {
+      "skip": 50,
+      "total": 61,
+      "count": 11,
+      "data": "# Found 11 of 61 workitems (Index: 51-61)\n\nNumber,Summary,Product,Area,Module,ChangeType,Status,Created,Updated,Completed,Created By,Release Groups,Last Activity\nWI01138280,TW - VBE - Include Attached eDocs in TWH Document delivery,GLW,DTW,TWH,FIX,CLS,2026-10-08,2026-10-23,2026-10-23,CL3,TWHRG,2026-10-23T06:32:00.000Z\nWI01138276,Neo: Liner and Agency Payment Term defaulting logic,GLW,GLC,WB2,FIX,CLS,2026-10-08,2026-10-21,2026-10-21,NDG,DEVORDRG,2026-10-21T03:07:00.000Z"
+    }
+  ]
+}

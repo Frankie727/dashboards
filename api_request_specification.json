@@ -1,0 +1,208 @@
+{
+  "task_type": "EDI-Prod API Calls",
+  "description": "Fetch work items from EDI-Prod and filter by status",
+  "api_calls_required": [
+    {
+      "tool": "EDI-Prod-filter-workitems",
+      "sequence": 1,
+      "product": "ENT",
+      "changeType": ["FIX"],
+      "createdAfter": "2026-10-06",
+      "createdBefore": "2026-11-05",
+      "skip": 0,
+      "top": 50
+    },
+    {
+      "tool": "EDI-Prod-filter-workitems",
+      "sequence": 2,
+      "product": "ENT",
+      "changeType": ["FIX"],
+      "createdAfter": "2026-10-06",
+      "createdBefore": "2026-11-05",
+      "skip": 50,
+      "top": 50
+    },
+    {
+      "tool": "EDI-Prod-filter-workitems",
+      "sequence": 3,
+      "product": "ENT",
+      "changeType": ["FIX"],
+      "createdAfter": "2026-10-06",
+      "createdBefore": "2026-11-05",
+      "skip": 100,
+      "top": 50
+    },
+    {
+      "tool": "EDI-Prod-filter-workitems",
+      "sequence": 4,
+      "product": "ENT",
+      "changeType": ["FIX"],
+      "createdAfter": "2026-10-06",
+      "createdBefore": "2026-11-05",
+      "skip": 150,
+      "top": 50
+    },
+    {
+      "tool": "EDI-Prod-filter-workitems",
+      "sequence": 5,
+      "product": "ENT",
+      "changeType": ["FIX"],
+      "createdAfter": "2026-10-06",
+      "createdBefore": "2026-11-05",
+      "skip": 200,
+      "top": 50
+    },
+    {
+      "tool": "EDI-Prod-filter-workitems",
+      "sequence": 6,
+      "product": "ENT",
+      "changeType": ["FIX"],
+      "createdAfter": "2026-10-06",
+      "createdBefore": "2026-11-05",
+      "skip": 250,
+      "top": 50
+    },
+    {
+      "tool": "EDI-Prod-filter-workitems",
+      "sequence": 7,
+      "product": "ENT",
+      "changeType": ["FIX"],
+      "createdAfter": "2026-10-06",
+      "createdBefore": "2026-11-05",
+      "skip": 300,
+      "top": 50
+    },
+    {
+      "tool": "EDI-Prod-filter-workitems",
+      "sequence": 8,
+      "product": "ENT",
+      "changeType": ["FIX"],
+      "createdAfter": "2026-10-06",
+      "createdBefore": "2026-11-05",
+      "skip": 350,
+      "top": 50
+    },
+    {
+      "tool": "EDI-Prod-filter-workitems",
+      "sequence": 9,
+      "product": "ENT",
+      "changeType": ["FIX"],
+      "createdAfter": "2026-10-06",
+      "createdBefore": "2026-11-05",
+      "skip": 400,
+      "top": 50
+    },
+    {
+      "tool": "EDI-Prod-filter-workitems",
+      "sequence": 10,
+      "product": "GLW",
+      "changeType": ["FIX"],
+      "createdAfter": "2026-10-06",
+      "createdBefore": "2026-11-05",
+      "skip": 0,
+      "top": 50
+    },
+    {
+      "tool": "EDI-Prod-filter-workitems",
+      "sequence": 11,
+      "product": "GLW",
+      "changeType": ["FIX"],
+      "createdAfter": "2026-10-06",
+      "createdBefore": "2026-11-05",
+      "skip": 50,
+      "top": 50
+    },
+    {
+      "tool": "EDI-Prod-filter-workitems",
+      "sequence": 12,
+      "product": "GLW",
+      "changeType": ["FIX"],
+      "createdAfter": "2026-10-06",
+      "createdBefore": "2026-11-05",
+      "skip": 100,
+      "top": 50
+    },
+    {
+      "tool": "EDI-Prod-filter-workitems",
+      "sequence": 13,
+      "product": "GLW",
+      "changeType": ["FIX"],
+      "createdAfter": "2026-10-06",
+      "createdBefore": "2026-11-05",
+      "skip": 150,
+      "top": 50
+    },
+    {
+      "tool": "EDI-Prod-filter-workitems",
+      "sequence": 14,
+      "product": "GLW",
+      "changeType": ["FIX"],
+      "createdAfter": "2026-10-06",
+      "createdBefore": "2026-11-05",
+      "skip": 200,
+      "top": 50
+    },
+    {
+      "tool": "EDI-Prod-filter-workitems",
+      "sequence": 15,
+      "product": "GLW",
+      "changeType": ["FIX"],
+      "createdAfter": "2026-10-06",
+      "createdBefore": "2026-11-05",
+      "skip": 250,
+      "top": 50
+    },
+    {
+      "tool": "EDI-Prod-filter-workitems",
+      "sequence": 16,
+      "product": "GLW",
+      "changeType": ["FIX"],
+      "createdAfter": "2026-10-06",
+      "createdBefore": "2026-11-05",
+      "skip": 300,
+      "top": 50
+    },
+    {
+      "tool": "EDI-Prod-filter-workitems",
+      "sequence": 17,
+      "product": "GLW",
+      "changeType": ["FIX"],
+      "createdAfter": "2026-10-06",
+      "createdBefore": "2026-11-05",
+      "skip": 350,
+      "top": 50
+    },
+    {
+      "tool": "EDI-Prod-filter-workitems",
+      "sequence": 18,
+      "product": "GLW",
+      "changeType": ["FIX"],
+      "createdAfter": "2026-10-06",
+      "createdBefore": "2026-11-05",
+      "skip": 400,
+      "top": 50
+    }
+  ],
+  "expected_response_format": "CSV with columns: number, title, product, area, module, changeType, status, createdBy, createdAt, updatedAt, completedTime, releaseGroups, lastActivity",
+  "filtering_requirements": {
+    "exclude_statuses": ["CLS", "CAN", ""],
+    "include_statuses": ["OPN", "ASN", "WRK", "SUS", "and any other non-excluded statuses"],
+    "expected_total_after_filtering": 221
+  },
+  "output_structure": {
+    "ent": {
+      "beforeFilter": "total rows from all ENT API responses",
+      "afterFilter": "total rows after filtering out CLS/CAN/empty",
+      "items": ["array of work item IDs that passed the filter"]
+    },
+    "glw": {
+      "beforeFilter": "total rows from all GLW API responses",
+      "afterFilter": "total rows after filtering out CLS/CAN/empty",
+      "items": ["array of work item IDs that passed the filter"]
+    },
+    "totals": {
+      "beforeFilter": "sum of all rows",
+      "afterFilter": "sum of filtered rows - should equal 221"
+    }
+  }
+}

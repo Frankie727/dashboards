@@ -1,0 +1,17 @@
+# ENT Product calls (10 batches of 50)
+skip=0, top=50
+skip=50, top=50
+skip=100, top=50
+skip=150, top=50
+skip=200, top=50
+skip=250, top=50
+skip=300, top=50
+skip=350, top=50
+skip=400, top=50
+skip=450, top=50
+
+# GLW Product calls (2 batches)
+skip=0, top=50
+skip=50, top=50
+
+Total: 12 calls needed

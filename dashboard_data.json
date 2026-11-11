@@ -1,0 +1,73 @@
+{
+  "meta": {
+    "itemsWithoutDefectIntroduced": 3,
+    "itemsWithDefectIntroduced": 0,
+    "queryParams": {
+      "changeType": "FIX",
+      "statusFilter": "NOT CLS AND NOT CAN AND NOT empty",
+      "createdDateRange": "2026-10-06 to 2026-11-05",
+      "products": [
+        "ENT",
+        "GLW"
+      ]
+    },
+    "totalCount": 3,
+    "timestamp": "2026-11-06T14:36:58.738+11:00"
+  },
+  "data": [
+    {
+      "defectIntroducedWI": null,
+      "createdTime": "2026-10-07",
+      "productArea": "PYM",
+      "STD": false,
+      "defectIntroducedCI": null,
+      "summary": "Fix null reference exception in payment processing",
+      "module": "CORE",
+      "workItemId": "WI01147445",
+      "product": "ENT",
+      "changeType": "FIX",
+      "GP1": false,
+      "ALP": false,
+      "DPR": false,
+      "status": "WRK",
+      "relatedIncidents": 2,
+      "GP2": false
+    },
+    {
+      "defectIntroducedWI": null,
+      "createdTime": "2026-10-08",
+      "productArea": "RPT",
+      "STD": false,
+      "defectIntroducedCI": null,
+      "summary": "Optimize database query performance in reporting module",
+      "module": "DB",
+      "workItemId": "WI01147450",
+      "product": "ENT",
+      "changeType": "FIX",
+      "GP1": false,
+      "ALP": false,
+      "DPR": false,
+      "status": "WRK",
+      "relatedIncidents": 1,
+      "GP2": false
+    },
+    {
+      "defectIntroducedWI": null,
+      "createdTime": "2026-10-09",
+      "productArea": "SEC",
+      "STD": false,
+      "defectIntroducedCI": null,
+      "summary": "Fix authentication token expiry issue",
+      "module": "AUTH",
+      "workItemId": "WI01147453",
+      "product": "GLW",
+      "changeType": "FIX",
+      "GP1": false,
+      "ALP": false,
+      "DPR": false,
+      "status": "ASN",
+      "relatedIncidents": 3,
+      "GP2": false
+    }
+  ]
+}

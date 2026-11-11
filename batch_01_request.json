@@ -1,0 +1,24 @@
+{
+  "workItems": [
+    "WI01136422",
+    "WI01136471",
+    "WI01136493",
+    "WI01136521",
+    "WI01136538",
+    "WI01136550",
+    "WI01136572",
+    "WI01136574",
+    "WI01136579",
+    "WI01136583"
+  ],
+  "expectedFields": [
+    "Defect Introduced in WI",
+    "DefectIntroducedWI",
+    "Defect Introduced in Checkin",
+    "DefectIntroducedCheckin",
+    "Defect Introduced in CI",
+    "DefectIntroducedCI",
+    "CheckinNumber"
+  ],
+  "batch": 1
+}

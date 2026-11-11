@@ -1,0 +1,293 @@
+{
+  "task": "Fetch work items from EDI-Prod with strict status filtering",
+  "tool": "EDI-Prod-filter-workitems",
+  "total_calls": 18,
+  "api_calls": [
+    {
+      "sequence": 1,
+      "tool": "EDI-Prod-filter-workitems",
+      "product": "ENT",
+      "parameters": {
+        "product": "ENT",
+        "changeType": [
+          "FIX"
+        ],
+        "createdAfter": "2026-10-06",
+        "createdBefore": "2026-11-05",
+        "skip": 0,
+        "top": 50
+      }
+    },
+    {
+      "sequence": 2,
+      "tool": "EDI-Prod-filter-workitems",
+      "product": "ENT",
+      "parameters": {
+        "product": "ENT",
+        "changeType": [
+          "FIX"
+        ],
+        "createdAfter": "2026-10-06",
+        "createdBefore": "2026-11-05",
+        "skip": 50,
+        "top": 50
+      }
+    },
+    {
+      "sequence": 3,
+      "tool": "EDI-Prod-filter-workitems",
+      "product": "ENT",
+      "parameters": {
+        "product": "ENT",
+        "changeType": [
+          "FIX"
+        ],
+        "createdAfter": "2026-10-06",
+        "createdBefore": "2026-11-05",
+        "skip": 100,
+        "top": 50
+      }
+    },
+    {
+      "sequence": 4,
+      "tool": "EDI-Prod-filter-workitems",
+      "product": "ENT",
+      "parameters": {
+        "product": "ENT",
+        "changeType": [
+          "FIX"
+        ],
+        "createdAfter": "2026-10-06",
+        "createdBefore": "2026-11-05",
+        "skip": 150,
+        "top": 50
+      }
+    },
+    {
+      "sequence": 5,
+      "tool": "EDI-Prod-filter-workitems",
+      "product": "ENT",
+      "parameters": {
+        "product": "ENT",
+        "changeType": [
+          "FIX"
+        ],
+        "createdAfter": "2026-10-06",
+        "createdBefore": "2026-11-05",
+        "skip": 200,
+        "top": 50
+      }
+    },
+    {
+      "sequence": 6,
+      "tool": "EDI-Prod-filter-workitems",
+      "product": "ENT",
+      "parameters": {
+        "product": "ENT",
+        "changeType": [
+          "FIX"
+        ],
+        "createdAfter": "2026-10-06",
+        "createdBefore": "2026-11-05",
+        "skip": 250,
+        "top": 50
+      }
+    },
+    {
+      "sequence": 7,
+      "tool": "EDI-Prod-filter-workitems",
+      "product": "ENT",
+      "parameters": {
+        "product": "ENT",
+        "changeType": [
+          "FIX"
+        ],
+        "createdAfter": "2026-10-06",
+        "createdBefore": "2026-11-05",
+        "skip": 300,
+        "top": 50
+      }
+    },
+    {
+      "sequence": 8,
+      "tool": "EDI-Prod-filter-workitems",
+      "product": "ENT",
+      "parameters": {
+        "product": "ENT",
+        "changeType": [
+          "FIX"
+        ],
+        "createdAfter": "2026-10-06",
+        "createdBefore": "2026-11-05",
+        "skip": 350,
+        "top": 50
+      }
+    },
+    {
+      "sequence": 9,
+      "tool": "EDI-Prod-filter-workitems",
+      "product": "ENT",
+      "parameters": {
+        "product": "ENT",
+        "changeType": [
+          "FIX"
+        ],
+        "createdAfter": "2026-10-06",
+        "createdBefore": "2026-11-05",
+        "skip": 400,
+        "top": 50
+      }
+    },
+    {
+      "sequence": 10,
+      "tool": "EDI-Prod-filter-workitems",
+      "product": "GLW",
+      "parameters": {
+        "product": "GLW",
+        "changeType": [
+          "FIX"
+        ],
+        "createdAfter": "2026-10-06",
+        "createdBefore": "2026-11-05",
+        "skip": 0,
+        "top": 50
+      }
+    },
+    {
+      "sequence": 11,
+      "tool": "EDI-Prod-filter-workitems",
+      "product": "GLW",
+      "parameters": {
+        "product": "GLW",
+        "changeType": [
+          "FIX"
+        ],
+        "createdAfter": "2026-10-06",
+        "createdBefore": "2026-11-05",
+        "skip": 50,
+        "top": 50
+      }
+    },
+    {
+      "sequence": 12,
+      "tool": "EDI-Prod-filter-workitems",
+      "product": "GLW",
+      "parameters": {
+        "product": "GLW",
+        "changeType": [
+          "FIX"
+        ],
+        "createdAfter": "2026-10-06",
+        "createdBefore": "2026-11-05",
+        "skip": 100,
+        "top": 50
+      }
+    },
+    {
+      "sequence": 13,
+      "tool": "EDI-Prod-filter-workitems",
+      "product": "GLW",
+      "parameters": {
+        "product": "GLW",
+        "changeType": [
+          "FIX"
+        ],
+        "createdAfter": "2026-10-06",
+        "createdBefore": "2026-11-05",
+        "skip": 150,
+        "top": 50
+      }
+    },
+    {
+      "sequence": 14,
+      "tool": "EDI-Prod-filter-workitems",
+      "product": "GLW",
+      "parameters": {
+        "product": "GLW",
+        "changeType": [
+          "FIX"
+        ],
+        "createdAfter": "2026-10-06",
+        "createdBefore": "2026-11-05",
+        "skip": 200,
+        "top": 50
+      }
+    },
+    {
+      "sequence": 15,
+      "tool": "EDI-Prod-filter-workitems",
+      "product": "GLW",
+      "parameters": {
+        "product": "GLW",
+        "changeType": [
+          "FIX"
+        ],
+        "createdAfter": "2026-10-06",
+        "createdBefore": "2026-11-05",
+        "skip": 250,
+        "top": 50
+      }
+    },
+    {
+      "sequence": 16,
+      "tool": "EDI-Prod-filter-workitems",
+      "product": "GLW",
+      "parameters": {
+        "product": "GLW",
+        "changeType": [
+          "FIX"
+        ],
+        "createdAfter": "2026-10-06",
+        "createdBefore": "2026-11-05",
+        "skip": 300,
+        "top": 50
+      }
+    },
+    {
+      "sequence": 17,
+      "tool": "EDI-Prod-filter-workitems",
+      "product": "GLW",
+      "parameters": {
+        "product": "GLW",
+        "changeType": [
+          "FIX"
+        ],
+        "createdAfter": "2026-10-06",
+        "createdBefore": "2026-11-05",
+        "skip": 350,
+        "top": 50
+      }
+    },
+    {
+      "sequence": 18,
+      "tool": "EDI-Prod-filter-workitems",
+      "product": "GLW",
+      "parameters": {
+        "product": "GLW",
+        "changeType": [
+          "FIX"
+        ],
+        "createdAfter": "2026-10-06",
+        "createdBefore": "2026-11-05",
+        "skip": 400,
+        "top": 50
+      }
+    }
+  ],
+  "expected_response_format": "CSV with columns: number, product, area, module, changeType, status, createdBy, createdAt, ...",
+  "filtering_rules": {
+    "exclude_statuses": [
+      "CLS",
+      "CAN",
+      ""
+    ],
+    "include_all_other_statuses": true,
+    "expected_total_after_filtering": 221
+  },
+  "expected_breakdown": {
+    "ent_total_before": "~495-600",
+    "ent_total_after": "~199",
+    "glw_total_before": "~61",
+    "glw_total_after": "~19-22"
+  }
+}

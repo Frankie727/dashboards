@@ -1,0 +1,186 @@
+{
+  "executionPlan": {
+    "product": "GLW",
+    "filters": {
+      "changeType": "FIX",
+      "status": "NCM",
+      "createdAfter": "2026-10-06",
+      "createdBefore": "2026-11-05"
+    },
+    "phases": [
+      {
+        "phase": 1,
+        "name": "Batch Collection",
+        "tool": "EDI-Prod-filter-workitems",
+        "calls": 7,
+        "description": "Fetch work item IDs with pagination (skip=0, 50, 100, ...)"
+      },
+      {
+        "phase": 2,
+        "name": "Detail Retrieval",
+        "tool": "EDI-Prod-get-job-details",
+        "calls": "~165",
+        "description": "Fetch complete details for each work item"
+      }
+    ],
+    "expectedResults": {
+      "totalWorkItems": "~165",
+      "totalAPICalls": "~172",
+      "outputFile": "C:\\Users\\Francesco.Mangione\\GitHub Repo - Francesco\\Dashboards\\glw_complete_details_all.json"
+    }
+  },
+  "toolInvocations": {
+    "metadata": {
+      "product": "GLW",
+      "changeType": "FIX",
+      "status": "NCM",
+      "dateRange": {
+        "createdAfter": "2026-10-06",
+        "createdBefore": "2026-11-05"
+      },
+      "generatedAt": "2026-11-05T14:51:50Z",
+      "expectedPhases": 2
+    },
+    "phase_1_batch_collection": {
+      "description": "Fetch ALL work item IDs using pagination",
+      "tool": "EDI-Prod-filter-workitems",
+      "total_batches": 7,
+      "batches": [
+        {
+          "batch_num": 0,
+          "skip": 0,
+          "top": 50,
+          "parameters": {
+            "product": "GLW",
+            "changeType": [
+              "FIX"
+            ],
+            "status": [
+              "NCM"
+            ],
+            "createdAfter": "2026-10-06",
+            "createdBefore": "2026-11-05",
+            "skip": 0,
+            "top": 50
+          }
+        },
+        {
+          "batch_num": 1,
+          "skip": 50,
+          "top": 50,
+          "parameters": {
+            "product": "GLW",
+            "changeType": [
+              "FIX"
+            ],
+            "status": [
+              "NCM"
+            ],
+            "createdAfter": "2026-10-06",
+            "createdBefore": "2026-11-05",
+            "skip": 50,
+            "top": 50
+          }
+        },
+        {
+          "batch_num": 2,
+          "skip": 100,
+          "top": 50,
+          "parameters": {
+            "product": "GLW",
+            "changeType": [
+              "FIX"
+            ],
+            "status": [
+              "NCM"
+            ],
+            "createdAfter": "2026-10-06",
+            "createdBefore": "2026-11-05",
+            "skip": 100,
+            "top": 50
+          }
+        },
+        {
+          "batch_num": 3,
+          "skip": 150,
+          "top": 50,
+          "parameters": {
+            "product": "GLW",
+            "changeType": [
+              "FIX"
+            ],
+            "status": [
+              "NCM"
+            ],
+            "createdAfter": "2026-10-06",
+            "createdBefore": "2026-11-05",
+            "skip": 150,
+            "top": 50
+          }
+        },
+        {
+          "batch_num": 4,
+          "skip": 200,
+          "top": 50,
+          "parameters": {
+            "product": "GLW",
+            "changeType": [
+              "FIX"
+            ],
+            "status": [
+              "NCM"
+            ],
+            "createdAfter": "2026-10-06",
+            "createdBefore": "2026-11-05",
+            "skip": 200,
+            "top": 50
+          }
+        },
+        {
+          "batch_num": 5,
+          "skip": 250,
+          "top": 50,
+          "parameters": {
+            "product": "GLW",
+            "changeType": [
+              "FIX"
+            ],
+            "status": [
+              "NCM"
+            ],
+            "createdAfter": "2026-10-06",
+            "createdBefore": "2026-11-05",
+            "skip": 250,
+            "top": 50
+          }
+        },
+        {
+          "batch_num": 6,
+          "skip": 300,
+          "top": 50,
+          "parameters": {
+            "product": "GLW",
+            "changeType": [
+              "FIX"
+            ],
+            "status": [
+              "NCM"
+            ],
+            "createdAfter": "2026-10-06",
+            "createdBefore": "2026-11-05",
+            "skip": 300,
+            "top": 50
+          }
+        }
+      ]
+    },
+    "phase_2_detail_collection": {
+      "description": "Fetch complete details for each work item",
+      "tool": "EDI-Prod-get-job-details",
+      "batch_size": "50 work items per batch",
+      "template": {
+        "jobNumber": "WI00000000"
+      }
+    }
+  }
+}

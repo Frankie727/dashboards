@@ -1,0 +1,67 @@
+{
+  "meta": {
+    "timestamp": "2026-11-05T13:07:05Z",
+    "queryParams": {
+      "products": ["ENT", "GLW"],
+      "changeType": "FIX",
+      "statusFilter": "NCM (NOT CLS, NOT CAN, NOT empty)",
+      "createdLastDays": 30,
+      "dateRange": {
+        "from": "2026-10-06",
+        "to": "2026-11-05"
+      }
+    },
+    "note": "This is a TEMPLATE showing the expected output structure. To populate with actual data from EDI Prod MCP Server, execute the queries in VS Code Copilot Chat.",
+    "executionInstructions": {
+      "step1": "Open VS Code with Copilot Chat",
+      "step2": "Paste the following prompt exactly",
+      "step3": "Wait for results and extract JSON"
+    },
+    "promptToUse": "Query EDI Prod MCP Server with EDI-Prod-filter-workitems: Query 1 - product='ENT', changeType=['FIX'], createdAfter='2026-10-06', createdBefore='2026-11-05', top=50, skip=0 (then continue pagination with skip=50, 100, etc.). Query 2 - product='GLW' with same parameters. For each result, exclude status='CLS' or 'CAN' or null. Extract: workItemId, summary, status, changeType, productArea, product, createdTime, module, priority, defectIntroducedWI, defectIntroducedCI, relatedIncidents. Return complete JSON with all pages aggregated."
+  },
+  "data": [],
+  "statistics": {
+    "totalCount": 0,
+    "pageCount": 0,
+    "itemsWithDefectIntroduced": 0,
+    "itemsWithoutDefectIntroduced": 0,
+    "byProduct": {
+      "ENT": {
+        "count": 0,
+        "withDefect": 0,
+        "withoutDefect": 0,
+        "byStatus": {}
+      },
+      "GLW": {
+        "count": 0,
+        "withDefect": 0,
+        "withoutDefect": 0,
+        "byStatus": {}
+      }
+    },
+    "defectTraceability": {
+      "withDefectIntroducedWI": 0,
+      "withDefectIntroducedCI": 0,
+      "withBoth": 0,
+      "withNeither": 0
+    }
+  },
+  "queryHistory": [
+    {
+      "product": "ENT",
+      "page": 0,
+      "skip": 0,
+      "top": 50,
+      "resultCount": 0,
+      "morePages": false
+    },
+    {
+      "product": "GLW",
+      "page": 0,
+      "skip": 0,
+      "top": 50,
+      "resultCount": 0,
+      "morePages": false
+    }
+  ]
+}

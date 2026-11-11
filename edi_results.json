@@ -1,0 +1,17 @@
+{
+  "meta": {
+    "timestamp": "2026-11-05T13:14:48.393+11:00",
+    "queryParams": {
+      "products": ["ENT", "GLW"],
+      "changeType": "FIX",
+      "statusFilter": "NCM (NOT CLS, NOT CAN, NOT empty)",
+      "createdLastDays": 30,
+      "dateRange": "2026-10-06 to 2026-11-05"
+    },
+    "totalCount": 557,
+    "itemsWithDefectIntroduced": 0,
+    "itemsWithoutDefectIntroduced": 557,
+    "notes": "Results exceed 50 items per product. ENT: 496 items (10 pages), GLW: 61 items (2 pages). All items have status != 'CLS', 'CAN', or empty."
+  },
+  "data": []
+}

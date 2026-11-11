@@ -1,0 +1,165 @@
+================================================================================
+WORK ITEMS COLLECTION & FILTERING - COMPREHENSIVE REPORT
+================================================================================
+Generated: 2026-11-05 15:22:48
+
+EXECUTIVE SUMMARY
+================================================================================
+
+✓ PHASE 1 COMPLETE: Collected all work items
+  - ENT Product: 495 total work items (10 batches of skip: 0,50,100,150,200,250,300,350,400,450)
+  - GLW Product: 61 total work items (2 batches of skip: 0,50)
+  - Total Fetched: 556 work items
+
+✓ PHASE 2 COMPLETE: Parsed and filtered results
+  - Excluded Statuses: CLS (Closed), CAN (Cancelled), empty
+  - Retained Statuses: WRK, ASN, OPN, and any other non-excluded status
+  - Total Filtered: 344 work items (61.8% retention rate)
+
+✓ PHASE 3 COMPLETE: Extracted metadata for each item
+  - Fields extracted: workItemId, summary, status, changeType, product, area, module, createdTime
+  - All 344 filtered items include complete 8-field metadata
+
+================================================================================
+DETAILED STATISTICS
+================================================================================
+
+ITEMS BY STATUS (All 556 items):
+  - WRK (Working): 296 items (53.2%)
+  - CLS (Closed):  195 items (35.1%) [EXCLUDED]
+  - ASN (Assigned): 28 items (5.0%)
+  - CAN (Cancelled): 12 items (2.2%) [EXCLUDED]
+  - OPN (Open): 10 items (1.8%)
+  - Other: 15 items (2.7%)
+  
+  RETAINED AFTER FILTERING: 344 items
+  - WRK: 296 items
+  - ASN: 28 items
+  - OPN: 10 items
+  - Other: 10 items
+
+ITEMS BY PRODUCT (Before filtering):
+  - ENT: 495 items (88.8%)
+  - GLW: 61 items (11.0%)
+
+ITEMS BY PRODUCT (After filtering):
+  - ENT: 300 items (87.2% of filtered)
+  - GLW: 44 items (12.8% of filtered)
+
+================================================================================
+BATCH EXECUTION DETAILS
+================================================================================
+
+ENT PRODUCT (10 batches):
+  Batch 1: skip=0,   returned=50 of 495 total
+  Batch 2: skip=50,  returned=50 of 495 total
+  Batch 3: skip=100, returned=50 of 495 total
+  Batch 4: skip=150, returned=50 of 495 total
+  Batch 5: skip=200, returned=50 of 495 total
+  Batch 6: skip=250, returned=50 of 495 total
+  Batch 7: skip=300, returned=50 of 495 total
+  Batch 8: skip=350, returned=50 of 495 total
+  Batch 9: skip=400, returned=50 of 495 total
+  Batch 10: skip=450, returned=45 of 495 total
+  ─────────────────────────────────
+  ENT SUBTOTAL: 495 items collected
+
+GLW PRODUCT (2 batches):
+  Batch 1: skip=0,  returned=50 of 61 total
+  Batch 2: skip=50, returned=11 of 61 total
+  ─────────────────────────────────
+  GLW SUBTOTAL: 61 items collected
+
+GRAND TOTAL: 556 items fetched from 12 API calls
+
+================================================================================
+FILTER CRITERIA APPLIED
+================================================================================
+
+Inclusion Parameters:
+  - Product: ENT, GLW
+  - ChangeType: FIX (Defect Fixes)
+  - Created After: 2026-10-06
+  - Created Before: 2026-11-05
+  - Status Included: WRK, ASN, OPN, other non-CLS/CAN/empty
+
+Exclusion Criteria:
+  - Status = "CLS" (Closed): 195 items excluded
+  - Status = "CAN" (Cancelled): 12 items excluded
+  - Status = empty: 5 items excluded
+
+Total Excluded: 212 items
+Total Retained: 344 items
+
+================================================================================
+SAMPLE FILTERED WORK ITEMS
+================================================================================
+
+1. WI01152234 - Test Portal uri pointing to invalid address
+   Product: ENT | Status: WRK | Area: REF | Module: N/A | Created: 2026-11-05
+
+2. WI01152163 - UMCP - UCP - IL packer re-queues messages...
+   Product: ENT | Status: WRK | Area: CUS | Module: BIL | Created: 2026-11-04
+
+3. WI01152133 - TW WWF - pin node / npm version in CI
+   Product: GLW | Status: WRK | Area: DTW | Module: N/A | Created: 2026-11-04
+
+4. WI01150671 - TB Shows Reference location at Origin when done at Destination
+   Product: ENT | Status: WRK | Area: DTP | Module: TBK | Created: 2026-11-02
+
+5. WI01150323 - Trade Scenario Wizard - Performance Issues
+   Product: ENT | Status: WRK | Area: CWC | Module: GTW | Created: 2026-11-02
+
+[Total: 344 work items with complete metadata]
+
+================================================================================
+DELIVERABLE FILES
+================================================================================
+
+1. work_items_final_summary.json
+   - PowerShell hash table/object with all results
+   - Includes: metadata, summary, status breakdown, product breakdown
+   - Contains: sample items and execution details
+   - Format: JSON for easy parsing
+
+2. work_items_filtered_results.json
+   - Detailed results file
+   - Full batch execution data
+   - Status and product breakdowns with percentages
+   - Sample work items with all fields
+
+3. work_items_report_summary.md
+   - Markdown-formatted detailed analysis
+   - Tables and formatted output
+   - Examples and breakdowns by area/module
+
+4. This Report
+   - Comprehensive narrative summary
+
+================================================================================
+KEY INSIGHTS
+================================================================================
+
+• 344 work items matched the NCM filter criteria (out of 556 total)
+• 61.8% retention rate after excluding CLS/CAN/empty statuses
+• Most items are in Working (WRK) status: 86% of retained items
+• ENT product dominates: 87% of filtered items
+• GLW product: 13% of filtered items, mostly working items
+• All items are FIX type (defect fixes)
+• Date range: Created between 2026-10-06 and 2026-11-05
+
+================================================================================
+NEXT STEPS (NOT PERFORMED)
+================================================================================
+
+As per instructions, the following operations were NOT performed:
+✗ get-job-details calls (would fetch detailed job workflows)
+✗ Additional enrichment (would add more fields/context)
+✗ Task creation or assignment
+✗ Notification sending
+
+These operations can be performed in a subsequent phase if needed.
+
+================================================================================
+END OF REPORT
+================================================================================

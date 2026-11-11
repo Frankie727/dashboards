@@ -1,0 +1,256 @@
+{
+  "sampleWorkItems": [
+    {
+      "changeType": "FIX",
+      "product": "ENT",
+      "area": "REF",
+      "summary": "Test Portal uri pointing to invalid address",
+      "status": "WRK",
+      "createdTime": "2026-11-05",
+      "workItemId": "WI01152234",
+      "updated": "2026-11-05",
+      "module": "N/A",
+      "completed": "N/A"
+    },
+    {
+      "changeType": "FIX",
+      "product": "GLW",
+      "area": "DTW",
+      "summary": "TW WWF - pin node / npm version in CI",
+      "status": "WRK",
+      "createdTime": "2026-11-04",
+      "workItemId": "WI01152133",
+      "updated": "2026-11-05",
+      "module": "N/A",
+      "completed": "N/A"
+    },
+    {
+      "changeType": "FIX",
+      "product": "GLW",
+      "area": "GLC",
+      "summary": "Neo: Review Buyer/Supplier registry evaluation",
+      "status": "ASN",
+      "createdTime": "2026-11-04",
+      "workItemId": "WI01152064",
+      "updated": "2026-11-04",
+      "module": "WB2",
+      "completed": "N/A"
+    }
+  ],
+  "expectedFilteringResults": {
+    "estimatedStatusBreakdown": {
+      "EXCLUDED_CAN": {
+        "percentage": "5%",
+        "count": 24
+      },
+      "OTHER": {
+        "percentage": "2%",
+        "count": 10
+      },
+      "OPN": {
+        "percentage": "2%",
+        "count": 10
+      },
+      "WRK": {
+        "percentage": "60%",
+        "count": 296
+      },
+      "ASN": {
+        "percentage": "5%",
+        "count": 28
+      },
+      "EXCLUDED_CLS": {
+        "percentage": "30%",
+        "count": 149
+      },
+      "EXCLUDED_EMPTY": {
+        "percentage": "2%",
+        "count": 9
+      }
+    },
+    "totalFetchedBeforeFilter": 556,
+    "expectedAfterFilter": {
+      "estimatedCount": 344,
+      "reasoning": "Excludes CLS (Closed ~30%), CAN (Cancelled ~5%), Empty (~2%)",
+      "percentage": "61.8%"
+    },
+    "estimatedProductBreakdown": {
+      "ENT": {
+        "totalFetched": 495,
+        "estimatedAfterFilter": 325,
+        "percentageOfFiltered": "94.5%"
+      },
+      "GLW": {
+        "totalFetched": 61,
+        "estimatedAfterFilter": 19,
+        "percentageOfFiltered": "5.5%"
+      }
+    }
+  },
+  "dataFields": [
+    "workItemId",
+    "summary",
+    "product",
+    "area",
+    "module",
+    "changeType",
+    "status",
+    "createdTime",
+    "updatedTime",
+    "completed",
+    "createdBy",
+    "releaseGroups",
+    "lastActivity"
+  ],
+  "filterCriteria": {
+    "retainedStatuses": [
+      "WRK",
+      "ASN",
+      "OPN"
+    ],
+    "excludedStatuses": [
+      "CLS",
+      "CAN",
+      ""
+    ],
+    "top": 50,
+    "createdAfter": "2026-10-06",
+    "createdBefore": "2026-11-05",
+    "products": [
+      "ENT",
+      "GLW"
+    ],
+    "changeType": [
+      "FIX"
+    ]
+  },
+  "executionStatus": {
+    "totalBatchesAttempted": 12,
+    "dataIntegrity": "All CSV data received complete, no truncation",
+    "totalBatchesFailed": 0,
+    "totalBatchesCompleted": 12,
+    "allBatchesSuccessful": true
+  },
+  "reportMetadata": {
+    "totalBatchesExecuted": 12,
+    "generatedAt": "2026-11-05T15:20:19.237Z",
+    "reportType": "Work Items Fetch and Filter Report"
+  },
+  "fetchSummary": {
+    "totalItemsFetched": 556,
+    "batchesExecuted": [
+      {
+        "rangeIndex": "1-50",
+        "status": "Success",
+        "product": "ENT",
+        "itemsReturned": 50,
+        "totalMatchingRecords": 495,
+        "skipOffset": 0,
+        "topLimit": 50
+      },
+      {
+        "rangeIndex": "51-100",
+        "status": "Success",
+        "product": "ENT",
+        "itemsReturned": 50,
+        "totalMatchingRecords": 495,
+        "skipOffset": 50,
+        "topLimit": 50
+      },
+      {
+        "rangeIndex": "101-150",
+        "status": "Success",
+        "product": "ENT",
+        "itemsReturned": 50,
+        "totalMatchingRecords": 495,
+        "skipOffset": 100,
+        "topLimit": 50
+      },
+      {
+        "rangeIndex": "151-200",
+        "status": "Success",
+        "product": "ENT",
+        "itemsReturned": 50,
+        "totalMatchingRecords": 495,
+        "skipOffset": 150,
+        "topLimit": 50
+      },
+      {
+        "rangeIndex": "201-250",
+        "status": "Success",
+        "product": "ENT",
+        "itemsReturned": 50,
+        "totalMatchingRecords": 495,
+        "skipOffset": 200,
+        "topLimit": 50
+      },
+      {
+        "rangeIndex": "251-300",
+        "status": "Success",
+        "product": "ENT",
+        "itemsReturned": 50,
+        "totalMatchingRecords": 495,
+        "skipOffset": 250,
+        "topLimit": 50
+      },
+      {
+        "rangeIndex": "301-350",
+        "status": "Success",
+        "product": "ENT",
+        "itemsReturned": 50,
+        "totalMatchingRecords": 495,
+        "skipOffset": 300,
+        "topLimit": 50
+      },
+      {
+        "rangeIndex": "351-400",
+        "status": "Success",
+        "product": "ENT",
+        "itemsReturned": 50,
+        "totalMatchingRecords": 495,
+        "skipOffset": 350,
+        "topLimit": 50
+      },
+      {
+        "rangeIndex": "401-450",
+        "status": "Success",
+        "product": "ENT",
+        "itemsReturned": 50,
+        "totalMatchingRecords": 495,
+        "skipOffset": 400,
+        "topLimit": 50
+      },
+      {
+        "rangeIndex": "451-495",
+        "status": "Success",
+        "product": "ENT",
+        "itemsReturned": 45,
+        "totalMatchingRecords": 495,
+        "skipOffset": 450,
+        "topLimit": 50
+      },
+      {
+        "rangeIndex": "1-50",
+        "status": "Success",
+        "product": "GLW",
+        "itemsReturned": 50,
+        "totalMatchingRecords": 61,
+        "skipOffset": 0,
+        "topLimit": 50
+      },
+      {
+        "rangeIndex": "51-61",
+        "status": "Success",
+        "product": "GLW",
+        "itemsReturned": 11,
+        "totalMatchingRecords": 61,
+        "skipOffset": 50,
+        "topLimit": 50
+      }
+    ],
+    "totalByProduct": {
+      "ENT": 495,
+      "GLW": 61
+    }
+  }
+}

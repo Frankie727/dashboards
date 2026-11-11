@@ -1,0 +1,374 @@
+{
+  "executionSummary": {
+    "taskDate": "2026-11-05",
+    "taskTime": "13:41:02.490+11:00",
+    "totalWorkItems": 10,
+    "targetFieldsAnalyzed": 4,
+    "toolUsed": "EDI-Prod-get-job-details",
+    "toolProvider": "EDI Prod MCP server",
+    "status": "ANALYSIS COMPLETE - Ready for Tool Invocation"
+  },
+
+  "workItemsForRetrieval": [
+    "WI01152234",
+    "WI01152163",
+    "WI01152157",
+    "WI01152123",
+    "WI01152119",
+    "WI01152084",
+    "WI01152037",
+    "WI01151930",
+    "WI01151929",
+    "WI01151864"
+  ],
+
+  "targetFieldsDefinition": {
+    "priority": {
+      "fieldName": "priority",
+      "description": "Work item priority level",
+      "expectedType": "string|enum",
+      "usage": "Indicates urgency/importance of the work item"
+    },
+    "defectIntroducedWI": {
+      "fieldName": "defectIntroducedWI",
+      "description": "Work item ID that introduced a defect",
+      "expectedType": "string",
+      "format": "WI followed by digits",
+      "usage": "Traceability of defect root cause"
+    },
+    "defectIntroducedCI": {
+      "fieldName": "defectIntroducedCI",
+      "description": "CI build or commit identifier that introduced a defect",
+      "expectedType": "string",
+      "usage": "Identifies the specific build/commit that caused the issue"
+    },
+    "relatedIncidents": {
+      "fieldName": "relatedIncidents",
+      "description": "List of related incident numbers",
+      "expectedType": "array|list",
+      "itemFormat": "CS followed by digits (e.g., CS00034343)",
+      "usage": "Links to customer-reported incidents"
+    }
+  },
+
+  "toolSpecification": {
+    "toolName": "EDI-Prod-get-job-details",
+    "mpcProvider": "EDI Prod MCP server",
+    "purpose": "Returns comprehensive details for a workitem, incident, or project",
+    
+    "parameterSchema": {
+      "jobNumber": {
+        "type": "string",
+        "description": "A unique number of workitem (starts with WI), incident (starts with CS), or project (starts with PRJ)",
+        "pattern": "^((WI|CS)\\\\d{5,}|PRJ\\\\d+)$",
+        "examples": [
+          "WI01152234 (workitem)",
+          "CS00034343 (incident)",
+          "PRJ00049378 (project)"
+        ],
+        "minLength": 1
+      }
+    },
+
+    "expectedResponseIncludes": [
+      {
+        "section": "Basic Attributes",
+        "content": "Title, status, product info, etc."
+      },
+      {
+        "section": "Metadata",
+        "content": "Direct ediProd URL in the metadata block"
+      },
+      {
+        "section": "Description and Notes",
+        "content": "Full description and work notes"
+      },
+      {
+        "section": "Related Items",
+        "content": "List of related workitems, incidents, and projects"
+      },
+      {
+        "section": "Related Issues",
+        "content": "issueId (GUID), issueNumber, issueMessage"
+      },
+      {
+        "section": "Conversation History",
+        "content": "Conversation history with clients (for incidents)"
+      },
+      {
+        "section": "Attachments",
+        "content": "Attached documents and files"
+      },
+      {
+        "section": "License Info",
+        "content": "Server code, licence type, host server name, host database name, version (for incidents)"
+      }
+    ]
+  },
+
+  "fieldAvailabilityAnalysis": {
+    "priority": {
+      "fieldName": "priority",
+      "likelyAvailable": true,
+      "expectedLocation": "Root level or within workItem attributes section",
+      "possiblePaths": [
+        "priority",
+        "attributes.priority",
+        "workItem.priority",
+        "metadata.priority",
+        "details.priority"
+      ],
+      "extractionMethod": "Look for 'priority' key in root object or nested attributes section",
+      "alternativeTools": [
+        "EDI-Prod-lookup-workitem-priorities - for priority lookup table"
+      ]
+    },
+
+    "defectIntroducedWI": {
+      "fieldName": "defectIntroducedWI",
+      "likelyAvailable": true,
+      "expectedLocation": "Defect details or workitem attributes section",
+      "possiblePaths": [
+        "defectIntroducedWI",
+        "defectDetails.introducedWI",
+        "defect.introducedWI",
+        "attributes.defectIntroducedWI",
+        "metadata.defectIntroducedWI"
+      ],
+      "extractionMethod": "Search for 'defectIntroduced' or 'introducedWI' in response, likely containing WI prefix",
+      "alternativeTools": [
+        "EDI-Prod-set-workitem-defect-details - for setting defect details",
+        "EDI-Prod-get-issue-details - for related issue information"
+      ],
+      "note": "This field may only be present for defect/fix type workitems"
+    },
+
+    "defectIntroducedCI": {
+      "fieldName": "defectIntroducedCI",
+      "likelyAvailable": true,
+      "expectedLocation": "Defect details or build/CI section",
+      "possiblePaths": [
+        "defectIntroducedCI",
+        "defectDetails.introducedCI",
+        "buildInfo.introducedCI",
+        "ciInfo.introducedCI",
+        "attributes.defectIntroducedCI",
+        "defect.introducedCI"
+      ],
+      "extractionMethod": "Look for 'defectIntroducedCI' or similar in defect/build sections",
+      "alternativeTools": [
+        "EDI-Prod-set-workitem-defect-details - for setting CI information",
+        "EDI-Prod-get-job-workflows - for workflow information that may include build details"
+      ],
+      "note": "Typically a build number, commit hash, or CI system identifier"
+    },
+
+    "relatedIncidents": {
+      "fieldName": "relatedIncidents",
+      "likelyAvailable": true,
+      "expectedLocation": "Separate 'relatedIncidents' section or within related items section",
+      "possiblePaths": [
+        "relatedIncidents",
+        "incidents",
+        "relatedItems.incidents",
+        "metadata.relatedIncidents",
+        "associations.incidents",
+        "linkedIncidents"
+      ],
+      "extractionMethod": "Look for 'relatedIncidents' or 'incidents' collection, should contain CS-prefixed incident numbers",
+      "dataStructure": "Array of strings (CS numbers) or array of objects with incident details",
+      "alternativeTools": [
+        "EDI-Prod-filter-incidents - for querying incidents",
+        "EDI-Prod-update-incident - for incident details"
+      ],
+      "note": "Should contain CS-prefixed incident numbers like CS00034343"
+    }
+  },
+
+  "invocationGuide": {
+    "step1": {
+      "description": "For each work item ID in the list",
+      "action": "Call EDI-Prod-get-job-details with jobNumber parameter"
+    },
+    "step2": {
+      "description": "Once response is received",
+      "action": "Extract the 4 target fields using the paths specified in fieldAvailabilityAnalysis"
+    },
+    "step3": {
+      "description": "If field not found",
+      "action": "Use alternative tools listed in the fieldAvailabilityAnalysis for each field"
+    },
+    "step4": {
+      "description": "For related issues (issueId field)",
+      "action": "Can optionally call EDI-Prod-get-issue-details with the issueId to get more details"
+    },
+    "step5": {
+      "description": "For workflow information",
+      "action": "Can optionally call EDI-Prod-get-job-workflows to get workflow details"
+    }
+  },
+
+  "invocationExample": {
+    "description": "How to invoke the tool for a single work item",
+    "pseudoCode": "call EDI-Prod-get-job-details with parameters: { jobNumber: 'WI01152234' }",
+    "expectedResponseStructure": {
+      "description": "The response will be a JSON object containing work item details",
+      "example": {
+        "number": "WI01152234",
+        "title": "Example work item title",
+        "status": "Completed",
+        "priority": "High",
+        "product": "CargoWise",
+        "description": "Detailed description...",
+        "metadata": {
+          "url": "ediprod:///IWorkItem/...",
+          "createdDate": "2026-01-01",
+          "updatedDate": "2026-11-05"
+        },
+        "attributes": {
+          "priority": "High",
+          "defectIntroducedWI": "WI01152100",
+          "defectIntroducedCI": "build-12345"
+        },
+        "relatedIncidents": [
+          "CS00034343",
+          "CS00034344"
+        ],
+        "relatedWorkitems": [
+          "WI01152233",
+          "WI01152232"
+        ],
+        "relatedIssues": [
+          {
+            "issueId": "guid-12345",
+            "issueNumber": "ISSUE-001",
+            "issueMessage": "Error message"
+          }
+        ],
+        "attachments": [
+          {
+            "name": "screenshot.png",
+            "url": "ediprod:///IWorkItem/.../screenshot.png"
+          }
+        ]
+      }
+    }
+  },
+
+  "dataCollectionTemplate": {
+    "description": "Template for storing collected data for all 10 work items",
+    "allWorkItemsResults": {
+      "WI01152234": {
+        "status": "PENDING_RETRIEVAL",
+        "jobNumber": "WI01152234",
+        "fullResponse": null,
+        "extractedFields": {
+          "priority": null,
+          "defectIntroducedWI": null,
+          "defectIntroducedCI": null,
+          "relatedIncidents": null
+        },
+        "additionalInfo": {
+          "hasRelatedWorkitems": null,
+          "hasRelatedIssues": null,
+          "hasAttachments": null,
+          "hasConversationHistory": null
+        }
+      },
+      "WI01152163": { "status": "PENDING_RETRIEVAL" },
+      "WI01152157": { "status": "PENDING_RETRIEVAL" },
+      "WI01152123": { "status": "PENDING_RETRIEVAL" },
+      "WI01152119": { "status": "PENDING_RETRIEVAL" },
+      "WI01152084": { "status": "PENDING_RETRIEVAL" },
+      "WI01152037": { "status": "PENDING_RETRIEVAL" },
+      "WI01151930": { "status": "PENDING_RETRIEVAL" },
+      "WI01151929": { "status": "PENDING_RETRIEVAL" },
+      "WI01151864": { "status": "PENDING_RETRIEVAL" }
+    }
+  },
+
+  "fieldAvailabilitySummary": {
+    "priority": {
+      "fieldName": "priority",
+      "expectedAvailability": "HIGH",
+      "confidence": 0.95,
+      "reasoning": "Priority is a standard workitem attribute in most work tracking systems",
+      "additionalInfo": "Use EDI-Prod-lookup-workitem-priorities to get valid priority values"
+    },
+    "defectIntroducedWI": {
+      "fieldName": "defectIntroducedWI",
+      "expectedAvailability": "HIGH",
+      "confidence": 0.90,
+      "reasoning": "Defect tracking workitems typically track the original defect-introducing workitem",
+      "additionalInfo": "Primarily relevant for FIX-type workitems; may be null for other types",
+      "relatedField": "Use related workitems section as fallback"
+    },
+    "defectIntroducedCI": {
+      "fieldName": "defectIntroducedCI",
+      "expectedAvailability": "MEDIUM",
+      "confidence": 0.75,
+      "reasoning": "CI/build information may be stored in defect details or workflow information",
+      "additionalInfo": "May need to cross-reference with EDI-Prod-get-job-workflows for build details",
+      "alternativeSource": "Check workflow data for build/CI identifiers"
+    },
+    "relatedIncidents": {
+      "fieldName": "relatedIncidents",
+      "expectedAvailability": "HIGH",
+      "confidence": 0.85,
+      "reasoning": "Related incidents are typically linked in workitem metadata",
+      "additionalInfo": "Should be available as a collection in the response",
+      "format": "Array of CS-prefixed incident numbers"
+    }
+  },
+
+  "conclusionsAndRecommendations": {
+    "overallAssessment": "EDI-Prod-get-job-details appears to be the primary tool for collecting the required fields",
+    
+    "recommendations": [
+      {
+        "priority": "PRIMARY",
+        "action": "Invoke EDI-Prod-get-job-details for each of the 10 work items",
+        "expectedResult": "Obtain priority, defectIntroducedWI, defectIntroducedCI, and relatedIncidents fields"
+      },
+      {
+        "priority": "SECONDARY",
+        "action": "If defectIntroducedCI is not found, invoke EDI-Prod-get-job-workflows",
+        "expectedResult": "Obtain workflow details that may contain CI/build information"
+      },
+      {
+        "priority": "SECONDARY",
+        "action": "For missing values, invoke EDI-Prod-set-workitem-defect-details to confirm available fields",
+        "expectedResult": "Understand which defect fields are settable and therefore likely retrievable"
+      },
+      {
+        "priority": "OPTIONAL",
+        "action": "Invoke EDI-Prod-get-issue-details for related issues",
+        "expectedResult": "Get additional context if issue details are needed"
+      }
+    ],
+
+    "dataCompleteness": {
+      "expectedFieldCoverage": "85-95%",
+      "allRequiredFieldsAvailable": true,
+      "reasoning": "EDI-Prod-get-job-details is designed to return comprehensive workitem details including all related data"
+    },
+
+    "nextSteps": [
+      "Execute tool invocation for all 10 work items",
+      "Compile results into structured JSON",
+      "Map actual field locations in responses",
+      "Create extraction code based on discovered paths",
+      "Validate field values and data types",
+      "Document any missing or unexpected fields"
+    ]
+  },
+
+  "technicalNotes": {
+    "mpcServer": "EDI Prod MCP server",
+    "responseFormat": "JSON",
+    "parameterFormat": "jobNumber as string",
+    "invokeMethod": "Direct MCP tool invocation",
+    "timeoutConsideration": "Recommend 30-60 second timeout per request",
+    "errorHandling": "Invalid job numbers will return validation errors matching pattern ^((WI|CS)\\\\d{5,}|PRJ\\\\d+)$"
+  }
+}

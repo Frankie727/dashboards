@@ -1,0 +1,79 @@
+{
+  "overview": {
+    "product": "GLW",
+    "objective": "Fetch complete details for ALL GLW work items",
+    "filters": {
+      "changeType": "FIX (defect fixes)",
+      "status": "NCM",
+      "createdAfter": "2026-10-06",
+      "createdBefore": "2026-11-05"
+    }
+  },
+  "collection_phases": [
+    {
+      "phase": 1,
+      "name": "Batch Collection",
+      "duration": "Sequential",
+      "steps": [
+        "Call EDI-Prod-filter-workitems with skip=0",
+        "Call EDI-Prod-filter-workitems with skip=50",
+        "Call EDI-Prod-filter-workitems with skip=100",
+        "Continue until batch has < 50 items",
+        "Extract all WI numbers from CSV results"
+      ],
+      "expected_results": "~165 work item IDs"
+    },
+    {
+      "phase": 2,
+      "name": "Detail Collection",
+      "duration": "Parallel (if possible) or sequential",
+      "steps": [
+        "For each work item ID from phase 1",
+        "Call EDI-Prod-get-job-details",
+        "Collect complete details including:",
+        "  - Description and notes",
+        "  - Status and metadata",
+        "  - Related items",
+        "  - Workflows and tasks",
+        "  - Attached files"
+      ],
+      "expected_results": "~165 complete work item records"
+    },
+    {
+      "phase": 3,
+      "name": "Data Aggregation",
+      "steps": [
+        "Combine all work item details",
+        "Create unified JSON structure",
+        "Add summary statistics",
+        "Save to glw_complete_details_all.json"
+      ]
+    }
+  ],
+  "output_specification": {
+    "file": "glw_complete_details_all.json",
+    "format": "JSON",
+    "structure": {
+      "metadata": {
+        "product": "GLW",
+        "totalItems": "number",
+        "collectionDate": "ISO timestamp",
+        "filters": "object"
+      },
+      "workItems": "array of work item objects",
+      "summary": {
+        "totalCollected": "number",
+        "byStatus": "counts by status",
+        "byArea": "counts by area",
+        "byModule": "counts by module"
+      }
+    }
+  },
+  "execution_readiness": {
+    "batch_params_prepared": true,
+    "detail_template_prepared": true,
+    "tool_manifest_created": true,
+    "ready_for_execution": true,
+    "next_action": "Execute phase 1 batch collection calls"
+  }
+}

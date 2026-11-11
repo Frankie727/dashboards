@@ -1,0 +1,180 @@
+{
+  "executionDetails": {
+    "entBatches": [
+      {
+        "returned": 50,
+        "skip": 0,
+        "total": 495
+      },
+      {
+        "returned": 50,
+        "skip": 50,
+        "total": 495
+      },
+      {
+        "returned": 50,
+        "skip": 100,
+        "total": 495
+      },
+      {
+        "returned": 50,
+        "skip": 150,
+        "total": 495
+      },
+      {
+        "returned": 50,
+        "skip": 200,
+        "total": 495
+      },
+      {
+        "returned": 50,
+        "skip": 250,
+        "total": 495
+      },
+      {
+        "returned": 50,
+        "skip": 300,
+        "total": 495
+      },
+      {
+        "returned": 50,
+        "skip": 350,
+        "total": 495
+      },
+      {
+        "returned": 50,
+        "skip": 400,
+        "total": 495
+      },
+      {
+        "returned": 45,
+        "skip": 450,
+        "total": 495
+      }
+    ],
+    "glwBatches": [
+      {
+        "returned": 50,
+        "skip": 0,
+        "total": 61
+      },
+      {
+        "returned": 11,
+        "skip": 50,
+        "total": 61
+      }
+    ]
+  },
+  "summary": {
+    "totalItemsFetched": 556,
+    "retentionPercentage": null,
+    "totalItemsExcluded": null,
+    "totalItemsFiltered": null
+  },
+  "metadata": {
+    "productsQueried": [
+      "ENT",
+      "GLW"
+    ],
+    "filterCriteria": {
+      "statusExcluded": [
+        "CLS",
+        "CAN",
+        ""
+      ],
+      "statusIncluded": [
+        "WRK",
+        "ASN",
+        "OPN",
+        "other non-excluded"
+      ],
+      "createdAfter": "2026-10-06",
+      "changeType": [
+        "FIX"
+      ],
+      "createdBefore": "2026-11-05"
+    },
+    "collectionDate": "2026-11-05 15:22:29",
+    "totalBatchesRequested": 12
+  },
+  "productBreakdown": {
+    "ENT": {
+      "percentage": "64%",
+      "totalAvailable": 495,
+      "batchesRequested": 10,
+      "count": 357
+    },
+    "GLW": {
+      "percentage": "11%",
+      "totalAvailable": 61,
+      "batchesRequested": 2,
+      "count": 61
+    },
+    "Filtered_GLW": {
+      "percentage": "9%",
+      "count": 44
+    },
+    "Filtered_ENT": {
+      "percentage": "61%",
+      "count": 300
+    }
+  },
+  "statusBreakdown": {
+    "OPN": {
+      "percentage": "2%",
+      "count": 10
+    },
+    "Other": {
+      "percentage": "2%",
+      "count": 10
+    },
+    "ASN": {
+      "percentage": "5%",
+      "count": 28
+    },
+    "Excluded_CLS": {
+      "percentage": "35%",
+      "count": 195
+    },
+    "WRK": {
+      "percentage": "60%",
+      "count": 296
+    },
+    "Excluded_CAN": {
+      "percentage": "2%",
+      "count": 12
+    }
+  },
+  "sampleWorkItems": [
+    {
+      "product": "ENT",
+      "status": "WRK",
+      "module": "N/A",
+      "area": "REF",
+      "changeType": "FIX",
+      "workItemId": "WI01152234",
+      "summary": "Test Portal uri pointing to invalid address",
+      "createdTime": "2026-11-05"
+    },
+    {
+      "product": "ENT",
+      "status": "WRK",
+      "module": "BIL",
+      "area": "CUS",
+      "changeType": "FIX",
+      "workItemId": "WI01152163",
+      "summary": "UMCP - UCP - IL packer re-queues messages it can never pack instead of discardin",
+      "createdTime": "2026-11-04"
+    },
+    {
+      "product": "GLW",
+      "status": "WRK",
+      "module": "N/A",
+      "area": "DTW",
+      "changeType": "FIX",
+      "workItemId": "WI01152133",
+      "summary": "TW WWF - pin node / npm version in CI",
+      "createdTime": "2026-11-04"
+    }
+  ]
+}

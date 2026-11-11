@@ -1,0 +1,74 @@
+[
+  {
+    "skip": 0,
+    "product": "ENT"
+  },
+  {
+    "skip": 50,
+    "product": "ENT"
+  },
+  {
+    "skip": 100,
+    "product": "ENT"
+  },
+  {
+    "skip": 150,
+    "product": "ENT"
+  },
+  {
+    "skip": 200,
+    "product": "ENT"
+  },
+  {
+    "skip": 250,
+    "product": "ENT"
+  },
+  {
+    "skip": 300,
+    "product": "ENT"
+  },
+  {
+    "skip": 350,
+    "product": "ENT"
+  },
+  {
+    "skip": 400,
+    "product": "ENT"
+  },
+  {
+    "skip": 0,
+    "product": "GLW"
+  },
+  {
+    "skip": 50,
+    "product": "GLW"
+  },
+  {
+    "skip": 100,
+    "product": "GLW"
+  },
+  {
+    "skip": 150,
+    "product": "GLW"
+  },
+  {
+    "skip": 200,
+    "product": "GLW"
+  },
+  {
+    "skip": 250,
+    "product": "GLW"
+  },
+  {
+    "skip": 300,
+    "product": "GLW"
+  },
+  {
+    "skip": 350,
+    "product": "GLW"
+  },
+  {
+    "skip": 400,
+    "product": "GLW"
+  }
+]

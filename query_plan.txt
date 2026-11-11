@@ -1,0 +1,9 @@
+# EDI Prod Workitem Query Script
+# This script will:
+# 1. Query ENT and GLW products for FIX changeType workitems created after 2026-10-06
+# 2. Exclude CLS, CAN statuses
+# 3. For each workitem, fetch full details including defectIntroducedWI, defectIntroducedCI
+# 4. Count related incidents for each workitem
+# 5. Format output as JSON
+
+The EDI-Prod-filter-workitems calls will be executed next with proper parameters.
