@@ -1,0 +1,114 @@
+{
+  "messages": [
+    {
+      "timestamp": "2024-11-19T10:30:00Z",
+      "from": "Support Team",
+      "body": "🚨 INCIDENT DECLARED - Customs message delivery failures reported in xT for IT region. Multiple customers unable to send/receive customs-related documents. Initiating incident response."
+    },
+    {
+      "timestamp": "2024-11-19T10:32:00Z",
+      "from": "Incident Commander",
+      "body": "@Database Performance Team @Customs Integration Team - Please join incident war room. This is a P1/CR1 incident affecting multiple customers in EMEA."
+    },
+    {
+      "timestamp": "2024-11-19T10:35:00Z",
+      "from": "Engineer A (Database)",
+      "body": "Investigating... Pulling logs from customs integration service. Initial observation: seeing delayed query responses from the database routine."
+    },
+    {
+      "timestamp": "2024-11-19T10:38:00Z",
+      "from": "Support Team",
+      "body": "Customer feedback: Messages sent hours ago still not delivered. Currently 8-10 customers affected across IT, IE, CH, ES regions."
+    },
+    {
+      "timestamp": "2024-11-19T10:40:00Z",
+      "from": "Engineer B (Database)",
+      "body": "Joining investigation. Checking database performance metrics - there's a significant queue buildup in the message processing pipeline."
+    },
+    {
+      "timestamp": "2024-11-19T10:45:00Z",
+      "from": "Engineer A (Database)",
+      "body": "Found it! The database routine 'ProcessCustomsMessages' has query optimizer settings that are only optimal for one of the calling processes. Settings don't match the current workload profile."
+    },
+    {
+      "timestamp": "2024-11-19T10:47:00Z",
+      "from": "Engineer C (Customs Integration)",
+      "body": "Confirming from our end: The routine was originally tuned for the IT integration process, but now we have IE, CH, ES processes also calling it with different query patterns."
+    },
+    {
+      "timestamp": "2024-11-19T10:50:00Z",
+      "from": "Engineer A (Database)",
+      "body": "Root cause confirmed. The other calling processes (IE, CH, ES) are experiencing performance degradation because their queries don't benefit from the IT-specific optimization. This is creating a backlog."
+    },
+    {
+      "timestamp": "2024-11-19T10:52:00Z",
+      "from": "Incident Commander",
+      "body": "What's the immediate mitigation? Can we restart with default configuration to unblock customers?"
+    },
+    {
+      "timestamp": "2024-11-19T10:55:00Z",
+      "from": "Engineer A (Database)",
+      "body": "Yes - restarting the routine with default configuration should immediately restore performance for all processes. It won't be optimal for any of them, but all will perform similarly."
+    },
+    {
+      "timestamp": "2024-11-19T11:00:00Z",
+      "from": "Engineer B (Database)",
+      "body": "Mitigation in progress - stopping the routine now..."
+    },
+    {
+      "timestamp": "2024-11-19T11:03:00Z",
+      "from": "Engineer B (Database)",
+      "body": "✓ Routine restarted with default configuration. Restarting dependent integration processes now."
+    },
+    {
+      "timestamp": "2024-11-19T11:05:00Z",
+      "from": "Engineer C (Customs Integration)",
+      "body": "✓ All integration processes (IT, IE, CH, ES) restarted successfully. Monitoring message queue now."
+    },
+    {
+      "timestamp": "2024-11-19T11:08:00Z",
+      "from": "Engineer A (Database)",
+      "body": "Queue is starting to clear! Seeing normal query response times now. Backlog processing rate improving."
+    },
+    {
+      "timestamp": "2024-11-19T11:15:00Z",
+      "from": "Support Team",
+      "body": "Receiving reports from customers - messages are now flowing through. Response times back to normal."
+    },
+    {
+      "timestamp": "2024-11-19T11:25:00Z",
+      "from": "Engineer A (Database)",
+      "body": "All 50K+ messages in backlog have been processed. Query queue is empty. Performance is stable and normal."
+    },
+    {
+      "timestamp": "2024-11-19T11:30:00Z",
+      "from": "Incident Commander",
+      "body": "✓ INCIDENT RESOLVED - Service fully restored. All affected customers' messages have been processed. Teams can stand down. Database Performance team will work on permanent fix."
+    },
+    {
+      "timestamp": "2024-11-19T11:33:00Z",
+      "from": "Support Team",
+      "body": "Preparing customer communication - will send within 30 minutes with incident summary and resolution details."
+    },
+    {
+      "timestamp": "2024-11-19T12:00:00Z",
+      "from": "Support Team",
+      "body": "✓ Customer communication sent to all 10 affected customers in IT, IE, CH, ES regions. Included incident description, timeline, and resolution confirmation."
+    },
+    {
+      "timestamp": "2024-11-19T14:00:00Z",
+      "from": "Engineer A (Database)",
+      "body": "Starting detailed analysis of permanent fix. Proposal: Implement process-specific configuration profiles with validation rules. This will allow optimal tuning for each calling process without manual configuration."
+    },
+    {
+      "timestamp": "2024-11-19T14:15:00Z",
+      "from": "Engineer B (Database)",
+      "body": "Good catch on the root cause. This highlights a gap in our configuration management. We also need automated monitoring to detect similar performance degradation earlier."
+    },
+    {
+      "timestamp": "2024-11-19T16:00:00Z",
+      "from": "Incident Commander",
+      "body": "Scheduling retrospective for 23 November. Permanent fix target: 30 November. Automated monitoring: 25 November. Configuration documentation: 23 November. Will be documenting prevention measures in internal PIR."
+    }
+  ]
+}

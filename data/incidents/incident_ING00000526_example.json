@@ -1,0 +1,151 @@
+{
+  "incident_id": "ING00000526",
+  "incident_title": "xT Customs messages not sending/receiving",
+  "start_time": "2024-11-19",
+  "end_time": "2024-11-19",
+  "business_impact": "Customs-related messages unable to send or receive in IT, IE, CH, ES regions, affecting cross-border operations and causing delays for multiple customers",
+  "affected_services": [
+    "Customs Integration Service",
+    "Message Queue Service",
+    "BizTalk Integration Platform"
+  ],
+  "affected_customers": "Multiple customers in EMEA region with active customs document workflows",
+  "estimated_customer_impact": "Approximately 50,000 messages in backlog; 8-10 customers with delayed deliveries",
+  "root_cause": "A database routine shared by several integration processes had been configured with database settings optimized for only one of them. The other processes experienced performance degradation, resulting in a message processing backlog.",
+  "root_cause_category": "Configuration",
+  "timeline_events": [
+    {
+      "timestamp": "2024-11-19 10:30",
+      "event_type": "incident_start",
+      "description": "Incident declared - Customs message delivery failures reported in IT region by support team",
+      "severity": 1
+    },
+    {
+      "timestamp": "2024-11-19 10:35",
+      "event_type": "investigation",
+      "description": "Database Performance Team begins analysis; identifies higher-than-normal query times in customs processing routine",
+      "severity": 2
+    },
+    {
+      "timestamp": "2024-11-19 10:45",
+      "event_type": "investigation",
+      "description": "Root cause identified - database routine configuration query optimizer settings don't match current workload profile",
+      "severity": 1
+    },
+    {
+      "timestamp": "2024-11-19 10:50",
+      "event_type": "investigation",
+      "description": "Customs Integration Team confirms: configuration issue affecting all calling processes except the one it was originally tuned for",
+      "severity": 1
+    },
+    {
+      "timestamp": "2024-11-19 11:05",
+      "event_type": "mitigation",
+      "description": "Temporary mitigation applied - affected database routine restarted with default configuration; processes restarted",
+      "severity": 1
+    },
+    {
+      "timestamp": "2024-11-19 11:15",
+      "event_type": "mitigation",
+      "description": "Message queue began clearing; monitoring throughput recovery",
+      "severity": 2
+    },
+    {
+      "timestamp": "2024-11-19 11:30",
+      "event_type": "resolution",
+      "description": "Service restored - message backlog cleared; all queued customs messages processing normally",
+      "severity": 1
+    },
+    {
+      "timestamp": "2024-11-19 11:35",
+      "event_type": "resolution",
+      "description": "Incident declared resolved; teams standing down from war room",
+      "severity": 1
+    },
+    {
+      "timestamp": "2024-11-19 12:00",
+      "event_type": "communication",
+      "description": "Customer communication sent to all affected accounts describing incident, impact, and resolution",
+      "severity": 2
+    },
+    {
+      "timestamp": "2024-11-19 14:00",
+      "event_type": "update",
+      "description": "Database Performance Team begins detailed analysis of permanent configuration fix",
+      "severity": 2
+    }
+  ],
+  "immediate_fix": "Restarted the database routine and all affected integration processes with default configuration. This immediately restored the routine's performance to normal levels. The message queue began clearing within 5 minutes, and all approximately 50,000 queued messages were processed within 45 minutes.",
+  "permanent_fix": "Implement process-specific configuration profiles for the database routine, with pre-deployment configuration validation rules to prevent similar misconfiguration. Expected completion: 30 November. Currently in progress with Database Performance Team.",
+  "teams_involved": [
+    "Database Performance Team",
+    "Customs Integration Team",
+    "Support Operations",
+    "Infrastructure Team (monitoring)"
+  ],
+  "prevention_measures": [
+    {
+      "action": "Implement pre-deployment configuration validation checks for all database routines",
+      "target": "Prevents misconfiguration from being deployed to production",
+      "owner": "Database Performance Team",
+      "expected_completion": "2024-11-30",
+      "status": "In Progress"
+    },
+    {
+      "action": "Add automated monitoring and alerting for database routine performance degradation",
+      "target": "Detects similar issues earlier; alerts on performance deviation",
+      "owner": "Infrastructure Team",
+      "expected_completion": "2024-11-25",
+      "status": "Planned"
+    },
+    {
+      "action": "Create detailed runbook documenting database routine configuration requirements for each calling process",
+      "target": "Ensures future configuration changes include proper process-specific tuning",
+      "owner": "Customs Integration Team + Database Team",
+      "expected_completion": "2024-11-23",
+      "status": "In Progress"
+    },
+    {
+      "action": "Add configuration review step to change management process for database routine modifications",
+      "target": "Creates checkpoint to catch configuration issues before production impact",
+      "owner": "Change Advisory Board",
+      "expected_completion": "2024-11-28",
+      "status": "Planned"
+    }
+  ],
+  "customer_communication_sent": true,
+  "customer_communication_details": {
+    "sent_at": "2024-11-19 12:00",
+    "recipients": ["Customer A", "Customer B", "Customer C", "Customer D", "Customer E", "Customer F", "Customer G", "Customer H", "Customer I", "Customer J"],
+    "regions": ["Italy", "Ireland", "Switzerland", "Spain"],
+    "content_summary": "Detailed incident description, timeline, impact summary, and resolution confirmation"
+  },
+  "notes": "This incident highlighted the critical importance of process-specific database performance tuning. The database routine had been optimized during initial implementation for one calling process, but as new integration processes were added over time, the original configuration became suboptimal for them. This underscores the need for more systematic configuration management and validation.\n\nAll affected customers in the IT (Italy), IE (Ireland), CH (Switzerland), and ES (Spain) regions were notified. Customer feedback during follow-up was positive regarding the rapid response and clear communication.",
+  "post_incident_actions_outstanding": [
+    {
+      "action": "Complete permanent configuration fix implementation",
+      "owner": "Database Performance Team",
+      "due_date": "2024-11-30"
+    },
+    {
+      "action": "Implement automated performance monitoring",
+      "owner": "Infrastructure Team",
+      "due_date": "2024-11-25"
+    },
+    {
+      "action": "Complete configuration documentation runbook",
+      "owner": "Customs Integration Team + Database Team",
+      "due_date": "2024-11-23"
+    },
+    {
+      "action": "Update change management process to include configuration validation step",
+      "owner": "Change Advisory Board",
+      "due_date": "2024-11-28"
+    },
+    {
+      "action": "Schedule team retrospective/lessons learned session",
+      "owner": "Incident Commander",
+      "due_date": "2024-11-26"
+    }
+  ]
+}
