@@ -21,48 +21,74 @@ Welcome! You now have a complete, production-ready system for generating **Inter
 - Professional language and formatting standards
 - Actionable prevention measures with ownership tracking
 
-## 🚀 Quick Start (3 Steps)
+## 🚀 Quick Start (5 Steps - 20-30 minutes)
 
-### Option A: Teams Chat Link (EASIEST - 5-10 min extraction)
-Have a Teams chat link? Extract directly!
+👉 **[QUICK_START_GUIDE.md](QUICK_START_GUIDE.md)** - Your complete workflow guide
 
-👉 **[EXTRACT_FROM_TEAMS_LINK.md](EXTRACT_FROM_TEAMS_LINK.md)** - Complete browser guide
+**Complete workflow with options for Teams extraction:**
 
-**Steps:**
-1. Open Teams link
-2. Press F12 → Console tab
-3. Paste extraction script (provided)
-4. Save JSON file
-5. Run parser
+1. **Extract Teams Chat** (5-10 min)
+   - Option A: Browser console (easiest)
+   - Option B: Teams native export
+   - Option C: Manual export
+   - See: [EXTRACT_FROM_TEAMS_LINK.md](EXTRACT_FROM_TEAMS_LINK.md)
 
-**Time: 5-10 minutes to extract, then proceed below**
+2. **Prepare Incident Data** (5 min)
+   - Create JSON file with metadata
+   - Save to `data/incidents/`
 
-### Option B: Manual JSON Export (Traditional)
-1. Export your incident response Teams channel to JSON:
-```json
-{
-  "messages": [
-    {"timestamp": "2024-11-19T10:30:00Z", "from": "Support", "body": "Incident declared"},
-    ...
-  ]
-}
-```
-Save as: `data/incidents/incident_<ID>.json`
+3. **Run Parser** (<1 min)
+   - Automatically consolidates 50+ messages → 10-15 events
+   - Classifies by type and severity
+   - Outputs structured data
 
-2. Parse Timeline
-```python
-from scripts.teams_pir_parser import TeamsChatsToTimelineParser
-parser = TeamsChatsToTimelineParser(max_timeline_entries=15)
-events = parser.parse_teams_json_export('data/incidents/incident_<ID>.json')
-```
+4. **Generate PIR with AI** (3-5 min)
+   - Use `.github/prompts/internal-pir-generator.prompt.md`
+   - Send to Copilot, Claude, or ChatGPT
+   - AI generates complete PIR document
 
-### Then Generate PIR (Both Options)
-1. Gather incident details (impact, root cause, prevention measures)
-2. Use `.github/prompts/internal-pir-generator.prompt.md` with Copilot or Claude
-3. AI generates comprehensive internal PIR
-4. Save to `reports/Internal_PIR_<ID>.md`
+## 🚀 Quick Start (5 Steps - 20-30 minutes)
 
-**⏱️ Total time: 40-60 minutes end-to-end**
+👉 **[QUICK_START_GUIDE.md](QUICK_START_GUIDE.md)** - Your complete workflow guide
+
+**Complete workflow with options for Teams extraction:**
+
+1. **Extract Teams Chat** (5-10 min)
+   - Option A: Browser console (easiest)
+   - Option B: Teams native export
+   - Option C: Manual export
+   - See: [EXTRACT_FROM_TEAMS_LINK.md](EXTRACT_FROM_TEAMS_LINK.md)
+
+2. **Prepare Incident Data** (5 min)
+   - Create JSON file with metadata
+   - Save to `data/incidents/`
+
+3. **Run Parser** (<1 min)
+   - Automatically consolidates 50+ messages → 10-15 events
+   - Classifies by type and severity
+   - Outputs structured data
+
+4. **Generate PIR with AI** (3-5 min)
+   - Use `.github/prompts/internal-pir-generator.prompt.md`
+   - Send to Copilot, Claude, or ChatGPT
+   - AI generates complete PIR document
+
+5. **Review & Publish** (5 min)
+   - Review for accuracy
+   - Save to `reports/`
+   - Commit to git
+
+**⏱️ Total: 20-30 minutes (mostly automated)**
+
+## 📋 Example PIR Documents
+
+See these complete examples to understand the full structure:
+
+👉 **[reports/Example_Internal_PIR_ING00000532.md](reports/Example_Internal_PIR_ING00000532.md)**
+- **Real-world scenario:** ICS2 Authorization Rejection Errors (107-minute incident)
+- **Shows all sections:** Executive Summary, Impact, Root Cause, Prevention Measures
+- **Includes appendices:** Timeline details, configuration changes, verification checklists
+- **Full structure:** Use as your template for future PIRs
 
 ## 📚 Documentation Guide
 
