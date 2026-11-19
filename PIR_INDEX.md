@@ -23,8 +23,22 @@ Welcome! You now have a complete, production-ready system for generating **Inter
 
 ## 🚀 Quick Start (3 Steps)
 
-### 1. Export Teams Chat
-Save your incident response Teams channel to JSON:
+### Option A: Teams Chat Link (EASIEST - 5-10 min extraction)
+Have a Teams chat link? Extract directly!
+
+👉 **[EXTRACT_FROM_TEAMS_LINK.md](EXTRACT_FROM_TEAMS_LINK.md)** - Complete browser guide
+
+**Steps:**
+1. Open Teams link
+2. Press F12 → Console tab
+3. Paste extraction script (provided)
+4. Save JSON file
+5. Run parser
+
+**Time: 5-10 minutes to extract, then proceed below**
+
+### Option B: Manual JSON Export (Traditional)
+1. Export your incident response Teams channel to JSON:
 ```json
 {
   "messages": [
@@ -35,20 +49,20 @@ Save your incident response Teams channel to JSON:
 ```
 Save as: `data/incidents/incident_<ID>.json`
 
-### 2. Parse Timeline
+2. Parse Timeline
 ```python
 from scripts.teams_pir_parser import TeamsChatsToTimelineParser
 parser = TeamsChatsToTimelineParser(max_timeline_entries=15)
-events = parser.parse_teams_json_export('data/incidents/incident_ING00000526.json')
+events = parser.parse_teams_json_export('data/incidents/incident_<ID>.json')
 ```
 
-### 3. Generate PIR
+### Then Generate PIR (Both Options)
 1. Gather incident details (impact, root cause, prevention measures)
 2. Use `.github/prompts/internal-pir-generator.prompt.md` with Copilot or Claude
 3. AI generates comprehensive internal PIR
 4. Save to `reports/Internal_PIR_<ID>.md`
 
-**⏱️ Total time: 30-90 minutes depending on incident complexity**
+**⏱️ Total time: 40-60 minutes end-to-end**
 
 ## 📚 Documentation Guide
 
