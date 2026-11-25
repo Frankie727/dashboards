@@ -4,6 +4,7 @@ import streamlit as st
 import pandas as pd
 import pyodbc
 from datetime import datetime
+from pathlib import Path
 from dotenv import load_dotenv
 import os
 
@@ -19,6 +20,11 @@ st.set_page_config(
 SQL_SERVER = os.getenv('SQL_SERVER', 'ediprod.db.corporate.cargowise.com')
 SQL_DATABASE = os.getenv('SQL_DATABASE', 'ediProd')
 
+# Data cache location (synced with SharePoint)
+DATA_CACHE_DIR = Path(r"C:\Users\raunak.singh\WiseTech Global\Team - ProdDev Global Product Support - Stats")
+if not DATA_CACHE_DIR.exists():
+    DATA_CACHE_DIR = Path(__file__).parent.parent / ".data_cache"
+
 def get_sql_connection():
     """Establish connection to SQL Server using Windows Authentication"""
     try:
@@ -30,8 +36,28 @@ def get_sql_connection():
 
 @st.cache_data(ttl=300, show_spinner=False)
 def load_gps_team_members() -> tuple[pd.DataFrame, datetime]:
-    """Load all GPS team staff members"""
+    """Load GPS team members from CSV, fallback to SQL"""
     
+    csv_file = DATA_CACHE_DIR / "gps_team.csv"
+    data_source = "Unknown"
+    
+    # Try to load from CSV first
+    if csv_file.exists():
+        try:
+            df = pd.read_csv(csv_file)
+            fetched_at = datetime.fromtimestamp(csv_file.stat().st_mtime)
+            data_source = "CSV (SharePoint Synced Folder)"
+            st.info(
+                f"📂 **Data Source:** {data_source}\n\n"
+                f"**Last CSV Update:** {fetched_at.strftime('%Y-%m-%d %H:%M:%S')}\n\n"
+                f"*Cache expires in 5 minutes and will auto-refresh*"
+            )
+            return df, fetched_at
+        except Exception as e:
+            st.warning(f"Could not load CSV: {e}. Switching to SQL Server...")
+    
+    # Fallback to SQL if CSV doesn't exist
+    data_source = "SQL Server (ediProd database)"
     GPS_CAPABILITY_PK = "BF9A2BC9-FC0E-42EC-8D9E-DA9D5915FC5C"
     
     query = f"""
@@ -48,6 +74,11 @@ def load_gps_team_members() -> tuple[pd.DataFrame, datetime]:
     conn = get_sql_connection()
     try:
         df = pd.read_sql(query, conn)
+        st.warning(
+            f"⚠️ **Data Source:** {data_source}\n\n"
+            f"CSV file not found. Using SQL Server query instead.\n\n"
+            f"*Cache expires in 5 minutes and will auto-refresh*"
+        )
         return df, datetime.now()
     finally:
         conn.close()
@@ -64,6 +95,25 @@ with col_title:
     st.markdown("## GPS Team")
     st.caption("Source: GlbStaff · GlbResourceCapabilityPivot")
 
+# Cache & Refresh Info
+st.info(
+    "**📊 Data Source & Caching:**\n\n"
+    "- Data loaded from **CSV files** in your SharePoint folder\n"
+    "- Falls back to **SQL Server** if CSV unavailable\n"
+    "- **Cache TTL:** 5 minutes (auto-refreshes)\n"
+    "- Use buttons below to manage refresh"
+)
+
+col_refresh1, col_refresh2 = st.columns(2)
+with col_refresh1:
+    if st.button("🗑️ Clear Cache & Refresh", key="clear_cache_team", use_container_width=True):
+        st.cache_data.clear()
+        st.rerun()
+
+with col_refresh2:
+    if st.button("🔄 Soft Refresh", key="soft_refresh_team", use_container_width=True):
+        st.rerun()
+
 # About this page and Refresh button
 col1, col2, col3 = st.columns([0.85, 0.075, 0.075])
 with col1:
@@ -72,12 +122,10 @@ with col1:
             "List of all staff members who belong to the GPS (Global Product Support) capability."
         )
 with col2:
-    if st.button("ℹ️ About", width="stretch", key="about_btn"):
+    if st.button("ℹ️ About", key="about_btn", use_container_width=True):
         st.info("GPS Team - Staff members in the GPS capability")
 with col3:
-    if st.button("🔄 Refresh", width="stretch", key="refresh_btn"):
-        st.cache_data.clear()
-        st.rerun()
+    pass
 
 st.divider()
 
