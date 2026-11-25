@@ -5,6 +5,7 @@ import pandas as pd
 import altair as alt
 import pyodbc
 from datetime import date, datetime, timedelta
+from pathlib import Path
 from dotenv import load_dotenv
 import os
 
@@ -20,6 +21,11 @@ st.set_page_config(
 SQL_SERVER = os.getenv('SQL_SERVER', 'ediprod.db.corporate.cargowise.com')
 SQL_DATABASE = os.getenv('SQL_DATABASE', 'ediProd')
 
+# Data cache location (synced with SharePoint)
+DATA_CACHE_DIR = Path(r"C:\Users\raunak.singh\WiseTech Global\Team - ProdDev Global Product Support - Stats")
+if not DATA_CACHE_DIR.exists():
+    DATA_CACHE_DIR = Path(__file__).parent.parent / ".data_cache"
+
 def get_sql_connection():
     """Establish connection to SQL Server using Windows Authentication"""
     try:
@@ -31,8 +37,36 @@ def get_sql_connection():
 
 @st.cache_data(ttl=300, show_spinner=False)
 def load_group_incidents(product: str, start_iso: str, end_iso: str) -> tuple[pd.DataFrame, datetime]:
-    """All closed incidents fully resolved by GPS/INS members for the given product + window."""
+    """Load group incidents from CSV, fallback to SQL"""
     
+    csv_file = DATA_CACHE_DIR / "group_incidents.csv"
+    data_source = "Unknown"
+    
+    # Try to load from CSV first
+    if csv_file.exists():
+        try:
+            df = pd.read_csv(csv_file)
+            fetched_at = datetime.fromtimestamp(csv_file.stat().st_mtime)
+            data_source = "CSV (SharePoint Synced Folder)"
+            
+            # Filter by date range based on "Created" column (incident creation date)
+            if "Created" in df.columns:
+                df["Created"] = pd.to_datetime(df["Created"], errors="coerce")
+                start_dt = pd.to_datetime(start_iso)
+                end_dt = pd.to_datetime(end_iso) + timedelta(days=1)
+                df = df[(df["Created"] >= start_dt) & (df["Created"] < end_dt)]
+            
+            st.info(
+                f"📂 **Data Source:** {data_source}\n\n"
+                f"**Last CSV Update:** {fetched_at.strftime('%Y-%m-%d %H:%M:%S')}\n\n"
+                f"*Cache expires in 5 minutes and will auto-refresh*"
+            )
+            return df, fetched_at
+        except Exception as e:
+            st.warning(f"Could not load CSV: {e}. Switching to SQL Server...")
+    
+    # Fallback to SQL if CSV doesn't exist
+    data_source = "SQL Server (ediProd database)"
     GPS_CAPABILITY_PK = "BF9A2BC9-FC0E-42EC-8D9E-DA9D5915FC5C"
     INS_CAPABILITY_PK = "AC5AEA48-1BD3-412B-B739-644BF9A92C60"
     
@@ -148,6 +182,11 @@ def load_group_incidents(product: str, start_iso: str, end_iso: str) -> tuple[pd
     conn = get_sql_connection()
     try:
         df = pd.read_sql(query, conn, params=(product, start_iso, end_iso))
+        st.warning(
+            f"⚠️ **Data Source:** {data_source}\n\n"
+            f"CSV file not found. Using SQL Server query instead.\n\n"
+            f"*Cache expires in 5 minutes and will auto-refresh*"
+        )
         return df, datetime.now()
     finally:
         conn.close()
@@ -164,6 +203,25 @@ with col_title:
     st.markdown("## GPS Group Incidents")
     st.caption("Source: IncidentMain · ProcessTasks · Data as of —")
 
+# Cache & Refresh Info
+st.info(
+    "**📊 Data Source & Caching:**\n\n"
+    "- Data loaded from **CSV files** in your SharePoint folder\n"
+    "- Falls back to **SQL Server** if CSV unavailable\n"
+    "- **Cache TTL:** 5 minutes (auto-refreshes)\n"
+    "- Use buttons below to manage refresh"
+)
+
+col_refresh1, col_refresh2 = st.columns(2)
+with col_refresh1:
+    if st.button("🗑️ Clear Cache & Refresh", key="clear_cache_incidents", use_container_width=True):
+        st.cache_data.clear()
+        st.rerun()
+
+with col_refresh2:
+    if st.button("🔄 Soft Refresh", key="soft_refresh_incidents", use_container_width=True):
+        st.rerun()
+
 # About this page and Refresh button
 col1, col2, col3 = st.columns([0.85, 0.075, 0.075])
 with col1:
@@ -173,27 +231,28 @@ with col1:
             "of either capability (GPS or INS). Exception, Milestone and Trigger tasks are left out."
         )
 with col2:
-    if st.button("ℹ️ About", width="stretch", key="about_btn"):
+    if st.button("ℹ️ About", key="about_btn", use_container_width=True):
         st.info("GPS Group Incidents - all closed incidents fully resolved by GPS/INS members")
 with col3:
-    if st.button("🔄 Refresh", width="stretch", key="refresh_btn"):
-        st.rerun()
+    pass
 
 st.divider()
 
 # Filters section
 col1, col2, col3 = st.columns([1.2, 1.4, 1])
 product = col1.text_input("Product", value="ENT").strip().upper()
-start = col2.date_input("Created from", value=date(2026, 7, 1), key="start_date")
-window_days = col3.number_input("Window (days)", min_value=1, max_value=90, value=7, step=1)
+window_days = col2.number_input("Window (days)", min_value=1, value=7, step=1)
 
-end = start + timedelta(days=int(window_days))
+# Calculate date range: from (today - window_days) to today
+today = date.today()
+end = today
+start = today - timedelta(days=int(window_days) - 1)
 start_iso = start.strftime("%Y-%m-%d")
 end_iso = end.strftime("%Y-%m-%d")
 
 st.caption(
     f"Scope: closed **{product}** incidents created "
-    f"**{start:%d %b %Y} – {end - timedelta(days=1):%d %b %Y}** "
+    f"**{start:%d %b %Y} – {end:%d %b %Y}** "
     f"({int(window_days)} days) · all tasks closed by **GPS** or **INS** members only."
 )
 
@@ -298,10 +357,10 @@ if view.empty:
 elif per_staff.empty:
     st.info("No closing staff names for the current filters.")
 else:
-    view_choice = st.segmented_control(
-        "View", ["By staff", "By month", "Distribution"], default="By staff",
-        required=True, key="view_choice", label_visibility="collapsed"
-    ) or "By staff"
+    view_choice = st.radio(
+        "View", ["By staff", "By month", "Distribution"], index=0, 
+        key="view_choice", horizontal=True, label_visibility="collapsed"
+    )
     
     if view_choice == "By staff":
         top_n = st.slider("Show top N staff", 5, 40, max(5, min(20, len(per_staff))), key="topn")
